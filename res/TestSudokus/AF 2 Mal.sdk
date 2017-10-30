@@ -1,0 +1,43 @@
+$$$$$$$$$$$$$$$$$$$
+$2| |6$ | |4$ | | $
+$-----$-----$-----$
+$4| | $3| | $ | | $
+$-----$-----$-----$
+$ |9|3$7| | $6| | $
+$=================$
+$6|1| $ | | $4|3| $
+$-----$-----$-----$
+$ | |2$ |1| $8| | $
+$-----$-----$-----$
+$ |5|8$ | | $ |7|1$
+$=================$
+$ | |5$ | |2$7|4| $
+$-----$-----$-----$
+$ | | $ | |1$ | |8$
+$-----$-----$-----$
+$ | | $4| | $1| |9$
+$$$$$$$$$$$$$$$$$$$
+
+ProtokollKursor Kursor=21 
+ProtokollEintrag i=0  Z=3 S=1  Alt   Alt Neu  z=5 e=1 s=1 t=0  Neu
+ProtokollEintrag i=1  Z=2 S=3  Alt   Alt Neu  z=1 e=1 s=0 t=0  Neu
+ProtokollEintrag i=2  Z=5 S=2  Alt   Alt Neu  z=4 e=1 s=0 t=0  Neu
+ProtokollEintrag i=3  Z=7 S=1  Alt   Alt Neu  z=1 e=1 s=0 t=0  Neu
+ProtokollEintrag i=4  Z=8 S=3  Alt   Alt Neu  z=4 e=1 s=0 t=0  Neu
+ProtokollEintrag i=5  Z=8 S=1  Alt   Alt Neu  z=9 e=1 s=0 t=0  Neu
+ProtokollEintrag i=6  Z=4 S=3  Alt   Alt Neu  z=9 e=1 s=0 t=0  Neu
+ProtokollEintrag i=7  Z=5 S=1  Alt   Alt Neu  z=7 e=1 s=0 t=0  Neu
+ProtokollEintrag i=8  Z=6 S=1  Alt   Alt Neu  z=3 e=1 s=0 t=0  Neu
+ProtokollEintrag i=9  Z=1 S=4  Alt   Alt Neu  z=1 e=1 s=0 t=0  Neu
+ProtokollEintrag i=10  Z=5 S=6  Alt   Alt Neu  z=3 e=1 s=0 t=0  Neu
+ProtokollEintrag i=11  Z=6 S=5  Alt   Alt Neu  z=4 e=1 s=0 t=0  Neu
+ProtokollEintrag i=12  Z=3 S=8  Alt   Alt Neu  z=1 e=1 s=0 t=0  Neu
+ProtokollEintrag i=13  Z=3 S=9  Alt   Alt Neu  z=4 e=1 s=0 t=0  Neu
+ProtokollEintrag i=14  Z=3 S=5  Alt   Alt Neu  z=2 e=1 s=0 t=0  Neu
+ProtokollEintrag i=15  Z=3 S=6  Alt   Alt Neu  z=8 e=1 s=0 t=0  Neu
+ProtokollEintrag i=16  Z=9 S=1  Alt   Alt Neu  z=8 e=1 s=0 t=0  Neu
+ProtokollEintrag i=17  Z=9 S=3  Alt   Alt Neu  z=7 e=1 s=0 t=0  Neu
+ProtokollEintrag i=18  Z=8 S=5  Alt   Alt Neu  z=7 e=1 s=0 t=0  Neu
+ProtokollEintrag i=19  Z=4 S=6  Alt   Alt Neu  z=7 e=1 s=0 t=0  Neu
+ProtokollEintrag i=20  Z=9 S=5  Alt   Alt Neu  z=3 e=1 s=0 t=0  Neu
+ProtokollEintrag i=21  Z=2 S=5  Alt   Alt Neu  z=6 e=1 s=0 t=0  Neu

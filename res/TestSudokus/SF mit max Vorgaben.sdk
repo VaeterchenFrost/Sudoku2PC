@@ -1,0 +1,27 @@
+$$$$$$$$$$$$$$$$$$$
+$ |2|3$4| |5$6|7|8$
+$-----$-----$-----$
+$ |5|8$ |7| $ | |3$
+$-----$-----$-----$
+$ |6| $ |8|3$ | |2$
+$=================$
+$2|3|4$5| |6$7|8| $
+$-----$-----$-----$
+$ | |5$ |2|8$3| | $
+$-----$-----$-----$
+$8| | $ |3| $2| |5$
+$=================$
+$ | | $8|4| $ |2| $
+$-----$-----$-----$
+$5|8| $2|6| $ |3| $
+$-----$-----$-----$
+$ |4|2$3|5|7$8|9| $
+$$$$$$$$$$$$$$$$$$$
+
+ProtokollKursor Kursor=5 
+ProtokollEintrag i=0  Z=7 S=1  Alt   Alt Neu  z=3 e=1 s=1 t=0  Neu
+ProtokollEintrag i=1  Z=2 S=6  Alt   Alt Neu  z=2 e=1 s=0 t=0  Neu
+ProtokollEintrag i=2  Z=2 S=4  Alt   Alt Neu  z=6 e=1 s=0 t=0  Neu
+ProtokollEintrag i=3  Z=6 S=6  Alt   Alt Neu  z=4 e=1 s=0 t=0  Neu
+ProtokollEintrag i=4  Z=7 S=7  Alt   Alt Neu  z=5 e=1 s=0 t=0  Neu
+ProtokollEintrag i=5  Z=3 S=8  Alt   Alt Neu  z=5 e=1 s=0 t=0  Neu
