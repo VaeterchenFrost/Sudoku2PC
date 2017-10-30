@@ -1,6 +1,6 @@
-package langerprozess;
+package sudoku.langerprozess;
 
-import Paar;
+import sudoku.Paar;
 
 public interface LangerProzess {
 	/**

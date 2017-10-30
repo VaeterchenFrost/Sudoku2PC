@@ -1,6 +1,6 @@
-package kern.feldmatrix;
+package sudoku.kern.feldmatrix;
 
-import kern.EintragsEbenen;
+import sudoku.kern.EintragsEbenen;
 
 public class Eintrag {
 

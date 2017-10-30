@@ -1,6 +1,6 @@
-package neu.pool;
+package sudoku.neu.pool;
 
-import neu.pool.Pool0.AblageVorschrift;
+import sudoku.neu.pool.Pool0.AblageVorschrift;
 
 public class InfoTopf extends Info {
 	public final AblageVorschrift ablageVorschrift;

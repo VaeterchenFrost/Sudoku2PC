@@ -1,6 +1,6 @@
-package kern.animator;
+package sudoku.kern.animator;
 
-import kern.feldmatrix.FeldNummer;
+import sudoku.kern.feldmatrix.FeldNummer;
 
 public class Animator_SpiegelnSeite implements Animator {
 	@Override

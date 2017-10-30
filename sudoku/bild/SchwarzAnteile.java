@@ -1,13 +1,13 @@
-package bild;
+package sudoku.bild;
 
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Set;
 
-import bild.leser.ZahlBildInfo;
-import kern.animator.Animator;
-import kern.feldmatrix.FeldNummer;
+import sudoku.bild.leser.ZahlBildInfo;
+import sudoku.kern.animator.Animator;
+import sudoku.kern.feldmatrix.FeldNummer;
 
 @SuppressWarnings("serial")
 class SchwarzAnteile extends HashMap<FeldNummer, Float> implements ZahlBildInfo {

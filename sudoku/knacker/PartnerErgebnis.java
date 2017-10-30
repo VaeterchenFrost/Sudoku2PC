@@ -1,4 +1,4 @@
-package knacker;
+package sudoku.knacker;
 
 public class PartnerErgebnis {
 

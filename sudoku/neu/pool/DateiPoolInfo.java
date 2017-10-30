@@ -1,4 +1,4 @@
-package neu.pool;
+package sudoku.neu.pool;
 
 import java.io.File;
 import java.time.LocalDateTime;
@@ -7,10 +7,10 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.EnumMap;
 
-import logik.Schwierigkeit;
-import neu.NeuTyp;
-import neu.pool.Pool0.AblageVorschrift;
-import tools.Verzeichnis;
+import sudoku.logik.Schwierigkeit;
+import sudoku.neu.NeuTyp;
+import sudoku.neu.pool.Pool0.AblageVorschrift;
+import sudoku.tools.Verzeichnis;
 
 class DateiPoolInfo {
 

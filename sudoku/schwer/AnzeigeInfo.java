@@ -1,4 +1,4 @@
-package schwer;
+package sudoku.schwer;
 
 /**
  * @author Hendrick

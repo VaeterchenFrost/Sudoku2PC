@@ -1,4 +1,4 @@
-package kern.protokoll;
+package sudoku.kern.protokoll;
 
 public class ProtokollKursorInfo {
 	private MinMax eintrag;

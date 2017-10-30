@@ -1,4 +1,4 @@
-package bild.leser;
+package sudoku.bild.leser;
 
 class KriteriumOder implements KriteriumBildInfo {
 

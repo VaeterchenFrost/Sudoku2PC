@@ -1,4 +1,4 @@
-package schwer.daten;
+package sudoku.schwer.daten;
 
 import java.io.File;
 import java.io.IOException;
@@ -6,19 +6,19 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
-import kern.exception.Exc;
-import kern.info.InfoSudoku;
-import langerprozess.FortschrittAnzeige;
-import langerprozess.FortschrittZeiger;
-import langerprozess.LangerProzess;
-import langerprozess.ProcessOrganisator;
-import schwer.Analysator;
-import schwer.AnzeigeInfo;
-import schwer.SudokuSchwierigkeit;
-import Paar;
-import tools.Starter;
-import tools.TextDatei;
-import tools.Verzeichnis;
+import sudoku.Paar;
+import sudoku.kern.exception.Exc;
+import sudoku.kern.info.InfoSudoku;
+import sudoku.langerprozess.FortschrittAnzeige;
+import sudoku.langerprozess.FortschrittZeiger;
+import sudoku.langerprozess.LangerProzess;
+import sudoku.langerprozess.ProcessOrganisator;
+import sudoku.schwer.Analysator;
+import sudoku.schwer.AnzeigeInfo;
+import sudoku.schwer.SudokuSchwierigkeit;
+import sudoku.tools.Starter;
+import sudoku.tools.TextDatei;
+import sudoku.tools.Verzeichnis;
 
 /**
  * @author heroe

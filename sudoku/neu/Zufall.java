@@ -1,11 +1,11 @@
-package neu;
+package sudoku.neu;
 
 import java.util.Random;
 
-import kern.animator.Animator;
-import kern.feldmatrix.FeldMatrix;
-import kern.feldmatrix.FeldNummer;
-import kern.feldmatrix.FeldNummerListe;
+import sudoku.kern.animator.Animator;
+import sudoku.kern.feldmatrix.FeldMatrix;
+import sudoku.kern.feldmatrix.FeldNummer;
+import sudoku.kern.feldmatrix.FeldNummerListe;
 
 public class Zufall {
 	private static Random zufallsgenerator = new Random();

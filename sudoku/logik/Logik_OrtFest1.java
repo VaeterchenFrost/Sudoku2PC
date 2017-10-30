@@ -1,18 +1,18 @@
-package logik;
+package sudoku.logik;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import kern.exception.Exc;
-import kern.feldmatrix.Feld;
-import kern.feldmatrix.FeldListe;
-import kern.feldmatrix.FeldNummerListe;
-import kern.feldmatrix.FeldNummerMitZahl;
-import kern.feldmatrix.ZahlenListe;
-import logik.bericht.GruppenLaeufeListe;
-import logik.tipinfo.EinTipText;
-import logik.tipinfo.TipInfo;
-import logik.tipinfo.TipInfo0;
+import sudoku.kern.exception.Exc;
+import sudoku.kern.feldmatrix.Feld;
+import sudoku.kern.feldmatrix.FeldListe;
+import sudoku.kern.feldmatrix.FeldNummerListe;
+import sudoku.kern.feldmatrix.FeldNummerMitZahl;
+import sudoku.kern.feldmatrix.ZahlenListe;
+import sudoku.logik.bericht.GruppenLaeufeListe;
+import sudoku.logik.tipinfo.EinTipText;
+import sudoku.logik.tipinfo.TipInfo;
+import sudoku.logik.tipinfo.TipInfo0;
 
 class Logik_OrtFest1 implements Logik__Interface {
 

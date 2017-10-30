@@ -1,12 +1,12 @@
-package knacker.bericht;
+package sudoku.knacker.bericht;
 
 import java.util.ArrayList;
 
-import knacker.Ergebnis;
-import logik.Klugheit;
-import logik.KnackerPartner;
-import logik.LogikBerichtKurier;
-import logik.SudokuLogik;
+import sudoku.knacker.Ergebnis;
+import sudoku.logik.Klugheit;
+import sudoku.logik.KnackerPartner;
+import sudoku.logik.LogikBerichtKurier;
+import sudoku.logik.SudokuLogik;
 
 public class Schreiber implements LogikBerichtKurier {
 	private BerichtKnacker bericht;
@@ -61,7 +61,7 @@ public class Schreiber implements LogikBerichtKurier {
 	}
 
 	@Override
-	public void nimmLogikBericht(logik.bericht.BerichtLogik berichtDerLogik) {
+	public void nimmLogikBericht(sudoku.logik.bericht.BerichtLogik berichtDerLogik) {
 		KB_KlareSetzeMoegliche berichtEintrag = new KB_KlareSetzeMoegliche(berichtDerLogik);
 		bericht.add(berichtEintrag);
 	}

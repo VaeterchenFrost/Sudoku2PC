@@ -1,6 +1,6 @@
-package logik;
+package sudoku.logik;
 
-import kern.feldmatrix.FeldListe;
+import sudoku.kern.feldmatrix.FeldListe;
 
 class ArbeitsKasten {
 	/**

@@ -1,4 +1,4 @@
-package bild.leser;
+package sudoku.bild.leser;
 
 class KriteriumUnd implements KriteriumBildInfo {
 	private String name;

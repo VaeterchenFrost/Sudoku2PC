@@ -1,6 +1,6 @@
-package bild.leser;
+package sudoku.bild.leser;
 
-import kern.feldmatrix.FeldNummer;
+import sudoku.kern.feldmatrix.FeldNummer;
 
 /**
  * @author heroe

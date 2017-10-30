@@ -1,8 +1,8 @@
-package bild;
+package sudoku.bild;
 
 import java.util.ArrayList;
 
-import Paar;
+import sudoku.Paar;
 
 @SuppressWarnings("serial")
 public class StrichListe extends ArrayList<Strich> {

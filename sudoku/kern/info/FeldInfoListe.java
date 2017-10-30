@@ -1,8 +1,8 @@
-package kern.info;
+package sudoku.kern.info;
 
 import java.util.ArrayList;
 
-import kern.feldmatrix.FeldListe;
+import sudoku.kern.feldmatrix.FeldListe;
 
 @SuppressWarnings("serial")
 public class FeldInfoListe extends ArrayList<FeldInfo> {

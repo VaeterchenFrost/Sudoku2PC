@@ -1,4 +1,4 @@
-package bild;
+package sudoku.bild;
 
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;

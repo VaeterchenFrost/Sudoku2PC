@@ -1,6 +1,7 @@
-package logik.bericht;
+package sudoku.logik.bericht;
 
-import logik.Gruppe;
+import sudoku.logik.Gruppe;
+import sudoku.logik.Gruppe.Typ;
 
 /**
  * @author heroe

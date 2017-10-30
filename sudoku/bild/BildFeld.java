@@ -1,4 +1,4 @@
-package bild;
+package sudoku.bild;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -7,11 +7,11 @@ import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
-import bild.LinienStriche.StricheEinerLinie;
-import bild.leser.ZahlLeser;
-import kern.animator.Animator_DrehenRechts;
-import kern.feldmatrix.FeldMatrix;
-import kern.feldmatrix.FeldNummer;
+import sudoku.bild.LinienStriche.StricheEinerLinie;
+import sudoku.bild.leser.ZahlLeser;
+import sudoku.kern.animator.Animator_DrehenRechts;
+import sudoku.kern.feldmatrix.FeldMatrix;
+import sudoku.kern.feldmatrix.FeldNummer;
 
 /**
  * @author heroe

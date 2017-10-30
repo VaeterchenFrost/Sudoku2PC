@@ -1,4 +1,4 @@
-package kern.protokoll;
+package sudoku.kern.protokoll;
 
 public class MinMax {
 	public int min;

@@ -1,10 +1,10 @@
-package logik.tipinfo;
+package sudoku.logik.tipinfo;
 
-import kern.feldmatrix.FeldNummerListe;
-import kern.feldmatrix.FeldNummerMitZahl;
-import kern.feldmatrix.ZahlenListe;
-import kern.info.InfoSudoku;
-import logik.Logik_ID;
+import sudoku.kern.feldmatrix.FeldNummerListe;
+import sudoku.kern.feldmatrix.FeldNummerMitZahl;
+import sudoku.kern.feldmatrix.ZahlenListe;
+import sudoku.kern.info.InfoSudoku;
+import sudoku.logik.Logik_ID;
 
 public interface TipInfo {
 	/**

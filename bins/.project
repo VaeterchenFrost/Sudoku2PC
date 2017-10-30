@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="CP1252"?>
 <projectDescription>
 	<name>Sudoku2</name>
 	<comment></comment>
@@ -14,13 +14,6 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>sudoku</name>
-			<type>2</type>
-			<location>D:/workspaceJAVA/Sudoku2PC/sudoku</location>
-		</link>
-	</linkedResources>
 	<filteredResources>
 		<filter>
 			<id>1486069704314</id>

@@ -1,4 +1,4 @@
-package knacker.bericht;
+package sudoku.knacker.bericht;
 
 public class KB_KlareSetzeKlare1 extends KB_Eintrag1Zeile {
 	private int nKlare;

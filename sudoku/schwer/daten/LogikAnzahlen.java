@@ -1,13 +1,13 @@
-package schwer.daten;
+package sudoku.schwer.daten;
 
 import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
 
-import logik.Klugheit;
-import logik.Logik_ID;
-import logik.SudokuLogik;
+import sudoku.logik.Klugheit;
+import sudoku.logik.Logik_ID;
+import sudoku.logik.SudokuLogik;
 
 /**
  * @author Hendrick

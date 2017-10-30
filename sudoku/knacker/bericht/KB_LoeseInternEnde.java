@@ -1,6 +1,6 @@
-package knacker.bericht;
+package sudoku.knacker.bericht;
 
-import knacker.Ergebnis;
+import sudoku.knacker.Ergebnis;
 
 public class KB_LoeseInternEnde extends KB_Eintrag1Zeile {
 	public Ergebnis gibErgebnis() {

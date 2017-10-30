@@ -1,10 +1,10 @@
-package logik.bericht;
+package sudoku.logik.bericht;
 
-import kern.feldmatrix.FeldNummerMitZahl;
-import kern.feldmatrix.Problem;
-import kern.feldmatrix.ZahlenListe;
-import logik.Klugheit;
-import logik.Logik_ID;
+import sudoku.kern.feldmatrix.FeldNummerMitZahl;
+import sudoku.kern.feldmatrix.Problem;
+import sudoku.kern.feldmatrix.ZahlenListe;
+import sudoku.logik.Klugheit;
+import sudoku.logik.Logik_ID;
 
 public class Schreiber {
 	private static boolean istSystemOut = false;

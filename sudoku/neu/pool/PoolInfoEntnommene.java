@@ -1,4 +1,4 @@
-package neu.pool;
+package sudoku.neu.pool;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.EnumMap;
 
-import logik.Schwierigkeit;
+import sudoku.logik.Schwierigkeit;
 
 public class PoolInfoEntnommene {
 	/**

@@ -1,6 +1,6 @@
-package knacker.bericht;
+package sudoku.knacker.bericht;
 
-import knacker.Ergebnis;
+import sudoku.knacker.Ergebnis;
 
 public class KB_KlareErgebnis extends KB_Eintrag1Zeile {
 	private Ergebnis ergebnis;

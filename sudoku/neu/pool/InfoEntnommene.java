@@ -1,8 +1,8 @@
-package neu.pool;
+package sudoku.neu.pool;
 
 import java.time.LocalDateTime;
 
-import logik.Schwierigkeit;
+import sudoku.logik.Schwierigkeit;
 
 /**
  * @author heroe

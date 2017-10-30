@@ -1,12 +1,12 @@
-package logik;
+package sudoku.logik;
 
 import java.util.ArrayList;
 
-import kern.exception.Exc;
-import kern.feldmatrix.FeldListe;
-import kern.feldmatrix.FeldNummerListe;
-import logik.Kasten.LinienListe;
-import ArrayListInt;
+import sudoku.ArrayListInt;
+import sudoku.kern.exception.Exc;
+import sudoku.kern.feldmatrix.FeldListe;
+import sudoku.kern.feldmatrix.FeldNummerListe;
+import sudoku.logik.Kasten.LinienListe;
 
 class Logik_Kasten2 extends LogikKastenN {
 	public Logik_Kasten2(ArrayList<Kasten> kaesten) {

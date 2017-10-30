@@ -1,11 +1,11 @@
-package tip;
+package sudoku.tip;
 
 import java.util.ArrayList;
 
-import kern.feldmatrix.ZahlenListe;
-import kern.info.InfoSudoku;
-import logik.tipinfo.EinTipText;
-import logik.tipinfo.TipInfo;
+import sudoku.kern.feldmatrix.ZahlenListe;
+import sudoku.kern.info.InfoSudoku;
+import sudoku.logik.tipinfo.EinTipText;
+import sudoku.logik.tipinfo.TipInfo;
 
 public class Tip {
 	// --------------------------------------------------------------------------------------------------
@@ -25,14 +25,14 @@ public class Tip {
 
 		void setzeInfosInSudoku(boolean istAbschlussSudoku, String sudokuTitel) {
 			InfoSudoku sudoku = tipInfo.gibSudoku();
-			setzeTitel(sudokuTitel);
+			sudoku.setzeTitel(sudokuTitel);
 			if (!istAbschlussSudoku) {
-				markiereAllePassivAusser(tipInfo.gibMitSpieler());
+				sudoku.markiereAllePassivAusser(tipInfo.gibMitSpieler());
 			}
-			markiereAktiv(tipInfo.gibAktiveFelder());
+			sudoku.markiereAktiv(tipInfo.gibAktiveFelder());
 			if (tipInfo.gibLoeschZahlen() != null) {
 				ZahlenListe markierZahlen = tipInfo.gibLoeschZahlen();
-				markiereMoeglicheZahlen(markierZahlen);
+				sudoku.markiereMoeglicheZahlen(markierZahlen);
 			}
 		}
 

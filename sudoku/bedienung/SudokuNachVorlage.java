@@ -1,20 +1,20 @@
-package bedienung;
+package sudoku.bedienung;
 
-import kern.EintragsEbenen;
-import kern.exception.Exc;
-import kern.info.InfoSudoku;
-import kern.protokoll.Protokoll;
-import langerprozess.FortschrittAnzeige;
-import langerprozess.FortschrittZeiger;
-import langerprozess.LangerProzess;
-import langerprozess.ProcessOrganisator;
-import logik.SudokuLogik;
-import neu.NeuTyp;
-import neu.SudokuPool;
-import neu.pool.NeuTypOption;
-import Paar;
-import varianz.Loesungen;
-import varianz.Varianz;
+import sudoku.Paar;
+import sudoku.kern.EintragsEbenen;
+import sudoku.kern.exception.Exc;
+import sudoku.kern.info.InfoSudoku;
+import sudoku.kern.protokoll.Protokoll;
+import sudoku.langerprozess.FortschrittAnzeige;
+import sudoku.langerprozess.FortschrittZeiger;
+import sudoku.langerprozess.LangerProzess;
+import sudoku.langerprozess.ProcessOrganisator;
+import sudoku.logik.SudokuLogik;
+import sudoku.neu.NeuTyp;
+import sudoku.neu.SudokuPool;
+import sudoku.neu.pool.NeuTypOption;
+import sudoku.varianz.Loesungen;
+import sudoku.varianz.Varianz;
 
 /**
  * @author heroe

@@ -1,4 +1,4 @@
-package neu.pool;
+package sudoku.neu.pool;
 
 import java.time.LocalDateTime;
 

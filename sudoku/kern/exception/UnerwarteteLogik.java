@@ -1,4 +1,4 @@
-package kern.exception;
+package sudoku.kern.exception;
 
 @SuppressWarnings("serial")
 public class UnerwarteteLogik extends RuntimeException {

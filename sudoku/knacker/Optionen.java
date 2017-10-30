@@ -1,6 +1,6 @@
-package knacker;
+package sudoku.knacker;
 
-import knacker.Knacker.VersuchsEbenen;
+import sudoku.knacker.Knacker.VersuchsEbenen;
 
 public class Optionen {
 	/**

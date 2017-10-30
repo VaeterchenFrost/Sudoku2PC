@@ -1,9 +1,9 @@
-package knacker.bericht;
+package sudoku.knacker.bericht;
 
 public class KB_KlareSetzeMoegliche implements KB_BerichtEintrag {
-	private logik.bericht.BerichtLogik berichtMoegliche;
+	private sudoku.logik.bericht.BerichtLogik berichtMoegliche;
 
-	public KB_KlareSetzeMoegliche(logik.bericht.BerichtLogik berichtMoegliche) {
+	public KB_KlareSetzeMoegliche(sudoku.logik.bericht.BerichtLogik berichtMoegliche) {
 		this.berichtMoegliche = berichtMoegliche;
 	}
 
@@ -13,7 +13,7 @@ public class KB_KlareSetzeMoegliche implements KB_BerichtEintrag {
 		berichtMoegliche.systemOut();
 	}
 
-	public logik.bericht.BerichtLogik gibBericht() {
+	public sudoku.logik.bericht.BerichtLogik gibBericht() {
 		return berichtMoegliche;
 	}
 

@@ -1,8 +1,8 @@
-package varianz;
+package sudoku.varianz;
 
 import java.util.ArrayList;
 
-import kern.info.FeldInfo;
+import sudoku.kern.info.FeldInfo;
 
 public class VersuchStarts {
 

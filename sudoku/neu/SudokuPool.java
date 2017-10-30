@@ -1,12 +1,12 @@
-package neu;
+package sudoku.neu;
 
-import kern.exception.Exc;
-import kern.info.InfoSudoku;
-import neu.pool.DateiPool;
-import neu.pool.NeuTypOption;
-import neu.pool.Pool0;
-import neu.pool.PoolInfo;
-import neu.pool.PoolInfoEntnommene;
+import sudoku.kern.exception.Exc;
+import sudoku.kern.info.InfoSudoku;
+import sudoku.neu.pool.DateiPool;
+import sudoku.neu.pool.NeuTypOption;
+import sudoku.neu.pool.Pool0;
+import sudoku.neu.pool.PoolInfo;
+import sudoku.neu.pool.PoolInfoEntnommene;
 
 public class SudokuPool {
 	static GeneratorStatistik generatorStatistik = null;
@@ -25,7 +25,7 @@ public class SudokuPool {
 	 * 				ansonsten die Standardbehandlung des genannten Typs. 
 	 * @throws Exc
 	 */
-	public SudokuPool(tools.AusnahmeBehandlung externeAusnahmeBehandlung) throws Exc {
+	public SudokuPool(sudoku.tools.AusnahmeBehandlung externeAusnahmeBehandlung) throws Exc {
 		// this.pool = new Pool();
 		this.pool = new DateiPool();
 		this.generatorThread = new GeneratorThread(pool, externeAusnahmeBehandlung);

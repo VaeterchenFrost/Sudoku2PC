@@ -1,4 +1,4 @@
-package bild.leser;
+package sudoku.bild.leser;
 
 import java.awt.Color;
 import java.awt.Point;

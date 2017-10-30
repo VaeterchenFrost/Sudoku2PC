@@ -1,7 +1,7 @@
-package logik.bericht;
+package sudoku.logik.bericht;
 
-import kern.feldmatrix.FeldNummerMitZahl;
-import kern.feldmatrix.Problem;
+import sudoku.kern.feldmatrix.FeldNummerMitZahl;
+import sudoku.kern.feldmatrix.Problem;
 
 public class BE_Ende {
 	Problem problem;

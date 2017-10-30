@@ -1,4 +1,4 @@
-package kern.feldmatrix;
+package sudoku.kern.feldmatrix;
 
 public class FeldNummer implements Comparable<FeldNummer> {
 	final public int spalte;

@@ -1,8 +1,8 @@
-package neu;
+package sudoku.neu;
 
 import java.util.ArrayList;
 
-import logik.KastenIndex;
+import sudoku.logik.KastenIndex;
 
 @SuppressWarnings("serial")
 public class UnabhaengigeKasten extends ArrayList<ArrayList<KastenIndex>> {

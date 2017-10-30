@@ -1,10 +1,10 @@
-package neu.pool;
+package sudoku.neu.pool;
 
 import java.util.Collection;
 import java.util.EnumMap;
 import java.util.Iterator;
 
-import logik.Schwierigkeit;
+import sudoku.logik.Schwierigkeit;
 
 /**
  * @author heroe

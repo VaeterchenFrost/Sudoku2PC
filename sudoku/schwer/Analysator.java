@@ -1,15 +1,15 @@
-package schwer;
+package sudoku.schwer;
 
-import kern.EintragsEbenen;
-import kern.exception.Exc;
-import kern.info.InfoSudoku;
-import kern.protokoll.Protokoll;
-import knacker.Ergebnis;
-import knacker.Knacker;
-import knacker.Knacker.VersuchsEbenen;
-import knacker.bericht.BerichtKnacker;
-import logik.Klugheit;
-import logik.SudokuLogik;
+import sudoku.kern.EintragsEbenen;
+import sudoku.kern.exception.Exc;
+import sudoku.kern.info.InfoSudoku;
+import sudoku.kern.protokoll.Protokoll;
+import sudoku.knacker.Ergebnis;
+import sudoku.knacker.Knacker;
+import sudoku.knacker.Knacker.VersuchsEbenen;
+import sudoku.knacker.bericht.BerichtKnacker;
+import sudoku.logik.Klugheit;
+import sudoku.logik.SudokuLogik;
 
 /**
  * @author heroe

@@ -1,10 +1,10 @@
-package kern.protokoll;
+package sudoku.kern.protokoll;
 
-import kern.animator.Animator;
-import kern.exception.Exc;
-import kern.feldmatrix.Eintrag;
-import kern.feldmatrix.FeldMatrix;
-import kern.feldmatrix.FeldNummer;
+import sudoku.kern.animator.Animator;
+import sudoku.kern.exception.Exc;
+import sudoku.kern.feldmatrix.Eintrag;
+import sudoku.kern.feldmatrix.FeldMatrix;
+import sudoku.kern.feldmatrix.FeldNummer;
 
 public class ProtokollEintrag {
 	private FeldNummer feldNummer;

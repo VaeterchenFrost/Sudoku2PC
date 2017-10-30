@@ -1,6 +1,6 @@
-package bedienung;
+package sudoku.bedienung;
 
-import kern.protokoll.ProtokollKursorInfo;
+import sudoku.kern.protokoll.ProtokollKursorInfo;
 
 /**
  * @author Hendrick

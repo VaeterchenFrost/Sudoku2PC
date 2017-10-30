@@ -1,9 +1,9 @@
-package bild;
+package sudoku.bild;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import bild.LinienStriche.StricheEinerLinie;
+import sudoku.bild.LinienStriche.StricheEinerLinie;
 
 // ===================================================
 /**

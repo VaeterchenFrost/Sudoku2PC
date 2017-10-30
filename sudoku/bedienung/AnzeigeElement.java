@@ -1,4 +1,4 @@
-package bedienung;
+package sudoku.bedienung;
 
 /**
  * @author Hendrick

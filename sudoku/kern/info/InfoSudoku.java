@@ -1,4 +1,4 @@
-package kern.info;
+package sudoku.kern.info;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -7,14 +7,14 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
-import kern.exception.Exc;
-import kern.feldmatrix.Feld;
-import kern.feldmatrix.FeldListe;
-import kern.feldmatrix.FeldNummer;
-import kern.feldmatrix.FeldNummerListe;
-import kern.feldmatrix.FeldNummerMitZahl;
-import kern.feldmatrix.ZahlenListe;
-import tools.TextDatei;
+import sudoku.kern.exception.Exc;
+import sudoku.kern.feldmatrix.Feld;
+import sudoku.kern.feldmatrix.FeldListe;
+import sudoku.kern.feldmatrix.FeldNummer;
+import sudoku.kern.feldmatrix.FeldNummerListe;
+import sudoku.kern.feldmatrix.FeldNummerMitZahl;
+import sudoku.kern.feldmatrix.ZahlenListe;
+import sudoku.tools.TextDatei;
 
 /**
  * @author heroe

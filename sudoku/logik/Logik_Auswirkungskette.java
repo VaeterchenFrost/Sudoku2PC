@@ -1,4 +1,4 @@
-package logik;
+package sudoku.logik;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,18 +7,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import kern.exception.Exc;
-import kern.feldmatrix.Feld;
-import kern.feldmatrix.FeldListe;
-import kern.feldmatrix.FeldNummer;
-import kern.feldmatrix.FeldNummerListe;
-import kern.feldmatrix.FeldNummerMitZahl;
-import kern.feldmatrix.ZahlenFeldNummern;
-import kern.feldmatrix.ZahlenListe;
-import logik.bericht.GruppenLaeufeListe;
-import logik.tipinfo.EinTipText;
-import logik.tipinfo.TipInfo;
-import logik.tipinfo.TipInfo0;
+import sudoku.kern.exception.Exc;
+import sudoku.kern.feldmatrix.Feld;
+import sudoku.kern.feldmatrix.FeldListe;
+import sudoku.kern.feldmatrix.FeldNummer;
+import sudoku.kern.feldmatrix.FeldNummerListe;
+import sudoku.kern.feldmatrix.FeldNummerMitZahl;
+import sudoku.kern.feldmatrix.ZahlenFeldNummern;
+import sudoku.kern.feldmatrix.ZahlenListe;
+import sudoku.logik.bericht.GruppenLaeufeListe;
+import sudoku.logik.tipinfo.EinTipText;
+import sudoku.logik.tipinfo.TipInfo;
+import sudoku.logik.tipinfo.TipInfo0;
 
 /**
  * @author heroe
@@ -246,7 +246,7 @@ class Logik_Auswirkungskette implements Logik__Interface {
 					// Dies Feld ist möglicherweise ein Ketten-Ende-Feld
 
 					// Die StartZahl (die andere als Zahl) ermitteln
-					Feld startFeld = gibLogikFeld(feldNummer);
+					Feld startFeld = sudoku.gibLogikFeld(feldNummer);
 					ArrayList<Integer> moegliche = startFeld.gibMoegliche();
 					int zahl1 = moegliche.get(0);
 					int zahl2 = moegliche.get(1);

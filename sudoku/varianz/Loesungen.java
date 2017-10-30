@@ -1,8 +1,8 @@
-package varianz;
+package sudoku.varianz;
 
 import java.util.ArrayList;
 
-import kern.info.InfoSudoku;
+import sudoku.kern.info.InfoSudoku;
 
 /**
  * @author heroe
@@ -101,7 +101,7 @@ public class Loesungen {
 			if (basisIndex != null) {
 				titel = String.format("Variante %d -> Variante %d", iLoesung, basisIndex);
 			}
-			setzeTitel(titel);
+			sudoku.setzeTitel(titel);
 			sudokus[iLoesung] = sudoku;
 		}
 		return sudokus;

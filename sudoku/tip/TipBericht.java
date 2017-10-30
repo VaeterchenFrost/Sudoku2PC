@@ -1,15 +1,15 @@
-package tip;
+package sudoku.tip;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import kern.feldmatrix.FeldNummerListe;
-import kern.feldmatrix.FeldNummerMitZahl;
-import kern.info.InfoSudoku;
-import logik.Logik_ID;
-import logik.Schwierigkeit;
-import logik.tipinfo.TipInfo;
-import logik.tipinfo.TipKurier;
+import sudoku.kern.feldmatrix.FeldNummerListe;
+import sudoku.kern.feldmatrix.FeldNummerMitZahl;
+import sudoku.kern.info.InfoSudoku;
+import sudoku.logik.Logik_ID;
+import sudoku.logik.Schwierigkeit;
+import sudoku.logik.tipinfo.TipInfo;
+import sudoku.logik.tipinfo.TipKurier;
 
 /**
  * @author heroe

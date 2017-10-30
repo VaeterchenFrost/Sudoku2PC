@@ -1,7 +1,7 @@
-package kern.protokoll;
+package sudoku.kern.protokoll;
 
-import kern.exception.Exc;
-import kern.feldmatrix.FeldNummerMitZahl;
+import sudoku.kern.exception.Exc;
+import sudoku.kern.feldmatrix.FeldNummerMitZahl;
 
 public interface ProtokollMarkierer {
 	/**

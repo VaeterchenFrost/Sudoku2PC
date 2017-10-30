@@ -1,4 +1,4 @@
-package bild.leser;
+package sudoku.bild.leser;
 
 class KriteriumZahl4 extends KriteriumZahl_BildInfo {
 

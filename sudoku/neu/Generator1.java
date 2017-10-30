@@ -1,18 +1,18 @@
-package neu;
+package sudoku.neu;
 
 import java.util.ArrayList;
 
-import kern.exception.Exc;
-import kern.feldmatrix.FeldNummer;
-import kern.feldmatrix.FeldNummerListe;
-import kern.feldmatrix.FeldNummerMitZahl;
-import kern.feldmatrix.ZahlenListe;
-import kern.info.FeldInfo;
-import knacker.Ergebnis;
-import knacker.Knacker.VersuchsEbenen;
-import logik.Kasten;
-import logik.KastenIndex;
-import schwer.Analysator;
+import sudoku.kern.exception.Exc;
+import sudoku.kern.feldmatrix.FeldNummer;
+import sudoku.kern.feldmatrix.FeldNummerListe;
+import sudoku.kern.feldmatrix.FeldNummerMitZahl;
+import sudoku.kern.feldmatrix.ZahlenListe;
+import sudoku.kern.info.FeldInfo;
+import sudoku.knacker.Ergebnis;
+import sudoku.knacker.Knacker.VersuchsEbenen;
+import sudoku.logik.Kasten;
+import sudoku.logik.KastenIndex;
+import sudoku.schwer.Analysator;
 
 /**
  * @author Hendrick

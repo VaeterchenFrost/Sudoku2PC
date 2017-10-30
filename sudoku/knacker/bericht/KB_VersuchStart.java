@@ -1,7 +1,7 @@
-package knacker.bericht;
+package sudoku.knacker.bericht;
 
-import kern.feldmatrix.ZahlenListe;
-import logik.KnackerPartner;
+import sudoku.kern.feldmatrix.ZahlenListe;
+import sudoku.logik.KnackerPartner;
 
 public class KB_VersuchStart extends KB_Eintrag1Zeile {
 	ZahlenListe eintraege;

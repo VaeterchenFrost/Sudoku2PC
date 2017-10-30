@@ -1,12 +1,12 @@
-package kern.protokoll;
+package sudoku.kern.protokoll;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
-import kern.exception.Exc;
-import kern.feldmatrix.Eintrag;
-import kern.feldmatrix.FeldNummer;
-import tools.TextDatei;
+import sudoku.kern.exception.Exc;
+import sudoku.kern.feldmatrix.Eintrag;
+import sudoku.kern.feldmatrix.FeldNummer;
+import sudoku.tools.TextDatei;
 
 public class Protokoll_IO {
 	static private final String strIDProtokoll = "Protokoll";

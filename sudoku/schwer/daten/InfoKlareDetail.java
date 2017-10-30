@@ -1,13 +1,13 @@
-package schwer.daten;
+package sudoku.schwer.daten;
 
 import java.util.ArrayList;
 
-import logik.Gruppe;
-import logik.Logik_ID;
-import logik.SudokuLogik;
-import logik.bericht.BE_Logik;
-import schwer.AnzeigeInfo;
-import schwer.daten.LogikAnzahlen.LogikAnzahlFormatierer;
+import sudoku.logik.Gruppe;
+import sudoku.logik.Logik_ID;
+import sudoku.logik.SudokuLogik;
+import sudoku.logik.bericht.BE_Logik;
+import sudoku.schwer.AnzeigeInfo;
+import sudoku.schwer.daten.LogikAnzahlen.LogikAnzahlFormatierer;
 
 /**
  * @author heroe

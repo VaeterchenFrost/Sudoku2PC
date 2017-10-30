@@ -1,6 +1,6 @@
-package neu;
+package sudoku.neu;
 
-import kern.info.InfoSudoku;
+import sudoku.kern.info.InfoSudoku;
 
 public interface GeneratorStatistik {
 	/**

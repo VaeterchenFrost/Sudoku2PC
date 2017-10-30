@@ -1,9 +1,9 @@
-package logik.tipinfo;
+package sudoku.logik.tipinfo;
 
-import kern.feldmatrix.FeldNummerListe;
-import kern.info.InfoSudoku;
-import logik.Logik_ID;
-import logik.SudokuLogik;
+import sudoku.kern.feldmatrix.FeldNummerListe;
+import sudoku.kern.info.InfoSudoku;
+import sudoku.logik.Logik_ID;
+import sudoku.logik.SudokuLogik;
 
 public abstract class TipInfo0 implements TipInfo {
 	final protected Logik_ID logik;

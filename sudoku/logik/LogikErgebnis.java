@@ -1,9 +1,9 @@
-package logik;
+package sudoku.logik;
 
-import kern.feldmatrix.FeldNummerMitZahl;
-import kern.feldmatrix.ZahlenListe;
-import logik.bericht.GruppenLaeufeListe;
-import logik.tipinfo.TipInfo;
+import sudoku.kern.feldmatrix.FeldNummerMitZahl;
+import sudoku.kern.feldmatrix.ZahlenListe;
+import sudoku.logik.bericht.GruppenLaeufeListe;
+import sudoku.logik.tipinfo.TipInfo;
 
 class LogikErgebnis {
 	final GruppenLaeufeListe gruppenLaeufeListe;

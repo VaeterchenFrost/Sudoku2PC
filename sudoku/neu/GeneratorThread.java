@@ -1,12 +1,12 @@
-package neu;
+package sudoku.neu;
 
 import java.time.LocalDateTime;
 
-import neu.pool.Pool0;
+import sudoku.neu.pool.Pool0;
 
 class GeneratorThread extends Thread {
 	private Pool0 pool;
-	private tools.AusnahmeBehandlung externeAusnahmeBehandlung;
+	private sudoku.tools.AusnahmeBehandlung externeAusnahmeBehandlung;
 
 	/**
 	 * @param pool Der Pool, der die Sudokus verwaltet
@@ -14,7 +14,7 @@ class GeneratorThread extends Thread {
 	 * 				diese Ausnahmebehandlung für nicht gefangene Ausnahmen eingeklinkt, 
 	 * 				ansonsten die Standardbehandlung des genannten Typs. 
 	 */
-	GeneratorThread(Pool0 pool, tools.AusnahmeBehandlung externeAusnahmeBehandlung) {
+	GeneratorThread(Pool0 pool, sudoku.tools.AusnahmeBehandlung externeAusnahmeBehandlung) {
 		super(GeneratorThread.class.getName());
 		this.pool = pool;
 		this.externeAusnahmeBehandlung = externeAusnahmeBehandlung;
@@ -27,7 +27,7 @@ class GeneratorThread extends Thread {
 		if (externeAusnahmeBehandlung != null) {
 			externeAusnahmeBehandlung.einklinken();
 		} else {
-			tools.AusnahmeBehandlung ausnahmeBehandlung = new tools.AusnahmeBehandlung();
+			sudoku.tools.AusnahmeBehandlung ausnahmeBehandlung = new sudoku.tools.AusnahmeBehandlung();
 			ausnahmeBehandlung.einklinken();
 		}
 		int speicherMinute = LocalDateTime.now().getMinute();

@@ -1,4 +1,4 @@
-package knacker.bericht;
+package sudoku.knacker.bericht;
 
 import java.util.ArrayList;
 

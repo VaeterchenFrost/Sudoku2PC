@@ -1,8 +1,8 @@
-package logik.bericht;
+package sudoku.logik.bericht;
 
 import java.util.ArrayList;
 
-import logik.Gruppe;
+import sudoku.logik.Gruppe;
 
 public class GruppenLaeufeListe {
 	private ArrayList<GruppenLaeufe> gruppenLaeufeListe;

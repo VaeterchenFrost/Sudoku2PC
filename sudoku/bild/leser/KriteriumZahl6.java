@@ -1,6 +1,6 @@
-package bild.leser;
+package sudoku.bild.leser;
 
-import bild.leser.AusgangInfo.Ausgang;
+import sudoku.bild.leser.AusgangInfo.Ausgang;
 
 class KriteriumZahl6 extends KriteriumZahl_PerAusgang {
 

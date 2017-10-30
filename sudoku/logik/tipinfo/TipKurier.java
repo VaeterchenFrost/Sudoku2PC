@@ -1,8 +1,8 @@
-package logik.tipinfo;
+package sudoku.logik.tipinfo;
 
 import java.util.List;
 
-import logik.Logik_ID;
+import sudoku.logik.Logik_ID;
 
 /**
  * @author heroe

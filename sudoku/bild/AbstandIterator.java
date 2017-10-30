@@ -1,4 +1,4 @@
-package bild;
+package sudoku.bild;
 
 import java.util.Iterator;
 import java.util.List;

@@ -1,4 +1,4 @@
-package bild;
+package sudoku.bild;
 
 import java.awt.AWTException;
 import java.awt.Color;

@@ -1,4 +1,4 @@
-package logik.bericht;
+package sudoku.logik.bericht;
 
 import java.util.ArrayList;
 

@@ -1,9 +1,9 @@
-package logik;
+package sudoku.logik;
 
 import java.util.List;
 
-import kern.exception.Exc;
-import logik.tipinfo.TipInfo;
+import sudoku.kern.exception.Exc;
+import sudoku.logik.tipinfo.TipInfo;
 
 /**
  * @author heroe

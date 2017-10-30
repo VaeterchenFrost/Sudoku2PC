@@ -1,6 +1,6 @@
-package schwer.daten;
+package sudoku.schwer.daten;
 
-import schwer.AnzeigeInfo;
+import sudoku.schwer.AnzeigeInfo;
 
 public class InfoVersucheOK implements AnzeigeInfo {
 	// Anzahl geglückte Versuche

@@ -1,4 +1,4 @@
-package langerprozess;
+package sudoku.langerprozess;
 
 public interface FortschrittZeiger {
 	/**

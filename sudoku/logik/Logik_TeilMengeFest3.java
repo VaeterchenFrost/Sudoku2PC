@@ -1,4 +1,4 @@
-package logik;
+package sudoku.logik;
 
 import java.util.ArrayList;
 
