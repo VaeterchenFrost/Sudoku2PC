@@ -1,19 +1,19 @@
-package sudoku.schwer;
+package schwer;
 
 import java.util.ArrayList;
 
-import sudoku.kern.exception.Exc;
-import sudoku.kern.info.InfoSudoku;
-import sudoku.logik.Logik_ID;
-import sudoku.logik.Schwierigkeit;
-import sudoku.schwer.daten.AnalysatorKlare;
-import sudoku.schwer.daten.AnalysatorVersuch;
-import sudoku.schwer.daten.InfoKlareDetail;
-import sudoku.schwer.daten.InfoKlareZeit;
-import sudoku.schwer.daten.InfoUnbekannt;
-import sudoku.schwer.daten.InfoUnbestimmt;
-import sudoku.schwer.daten.InfoVersuche;
-import sudoku.schwer.daten.LogikAnzahlen;
+import kern.exception.Exc;
+import kern.info.InfoSudoku;
+import logik.Logik_ID;
+import logik.Schwierigkeit;
+import schwer.daten.AnalysatorKlare;
+import schwer.daten.AnalysatorVersuch;
+import schwer.daten.InfoKlareDetail;
+import schwer.daten.InfoKlareZeit;
+import schwer.daten.InfoUnbekannt;
+import schwer.daten.InfoUnbestimmt;
+import schwer.daten.InfoVersuche;
+import schwer.daten.LogikAnzahlen;
 
 /**
  * @author heroe
@@ -69,7 +69,7 @@ public class SudokuSchwierigkeit {
 	}
 
 	// public
-	SudokuSchwierigkeit(sudoku.knacker.bericht.BerichtKnacker bericht) {
+	SudokuSchwierigkeit(knacker.bericht.BerichtKnacker bericht) {
 		super();
 		init();
 

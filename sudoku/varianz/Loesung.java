@@ -1,10 +1,10 @@
-package sudoku.varianz;
+package varianz;
 
 import java.util.ArrayList;
 
-import sudoku.kern.feldmatrix.FeldNummer;
-import sudoku.kern.info.FeldInfo;
-import sudoku.kern.info.InfoSudoku;
+import kern.feldmatrix.FeldNummer;
+import kern.info.FeldInfo;
+import kern.info.InfoSudoku;
 
 /**
  * Eine Lösung des Sudoku

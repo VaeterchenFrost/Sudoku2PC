@@ -1,10 +1,10 @@
-package sudoku.knacker.bericht;
+package knacker.bericht;
 
 import java.util.ArrayList;
 
-import sudoku.kern.feldmatrix.FeldNummerMitZahl;
-import sudoku.kern.feldmatrix.ZahlenListe;
-import sudoku.logik.KnackerPartner;
+import kern.feldmatrix.FeldNummerMitZahl;
+import kern.feldmatrix.ZahlenListe;
+import logik.KnackerPartner;
 
 public class KB_VersuchePaare extends KB_Eintrag1Zeile {
 	private int anzahlPaare;

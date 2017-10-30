@@ -1,6 +1,6 @@
-package sudoku.kern.exception;
+package kern.exception;
 
-import sudoku.kern.feldmatrix.FeldNummerMitZahl;
+import kern.feldmatrix.FeldNummerMitZahl;
 
 @SuppressWarnings("serial")
 public class FehlendeMoeglicheZahl extends RuntimeException {

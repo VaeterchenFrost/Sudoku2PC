@@ -1,27 +1,26 @@
-package sudoku.logik;
+package logik;
 
 import java.util.ArrayList;
 import java.util.EnumMap;
 import java.util.List;
 
-import sudoku.kern.EintragsEbenen;
-import sudoku.kern.exception.Exc;
-import sudoku.kern.exception.UnerwarteteLogik;
-import sudoku.kern.feldmatrix.Feld;
-import sudoku.kern.feldmatrix.FeldListe;
-import sudoku.kern.feldmatrix.FeldMatrix;
-import sudoku.kern.feldmatrix.FeldNummer;
-import sudoku.kern.feldmatrix.FeldNummerListe;
-import sudoku.kern.feldmatrix.FeldNummerMitZahl;
-import sudoku.kern.feldmatrix.Problem;
-import sudoku.kern.feldmatrix.ZahlenFeldNummern;
-import sudoku.kern.feldmatrix.ZahlenListe;
-import sudoku.kern.info.InfoSudoku;
-import sudoku.logik.bericht.Schreiber;
-import sudoku.logik.tipinfo.EinTipText;
-import sudoku.logik.tipinfo.TipInfo;
-import sudoku.logik.tipinfo.TipInfo0;
-import sudoku.logik.tipinfo.TipKurier;
+import kern.EintragsEbenen;
+import kern.exception.Exc;
+import kern.exception.UnerwarteteLogik;
+import kern.feldmatrix.Feld;
+import kern.feldmatrix.FeldListe;
+import kern.feldmatrix.FeldMatrix;
+import kern.feldmatrix.FeldNummer;
+import kern.feldmatrix.FeldNummerListe;
+import kern.feldmatrix.FeldNummerMitZahl;
+import kern.feldmatrix.Problem;
+import kern.feldmatrix.ZahlenFeldNummern;
+import kern.feldmatrix.ZahlenListe;
+import kern.info.InfoSudoku;
+import logik.tipinfo.EinTipText;
+import logik.tipinfo.TipInfo;
+import logik.tipinfo.TipInfo0;
+import logik.tipinfo.TipKurier;
 
 public class SudokuLogik extends FeldMatrix {
 	// ab dieser Anzahl an Vorgaben könnte das Sudoku ausreichend festgelegt sein

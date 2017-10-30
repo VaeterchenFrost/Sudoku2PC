@@ -1,4 +1,4 @@
-package sudoku.kern.feldmatrix;
+package kern.feldmatrix;
 
 public interface ProtokollSchreiber {
 	/**

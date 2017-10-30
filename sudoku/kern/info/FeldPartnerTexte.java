@@ -1,10 +1,10 @@
-package sudoku.kern.info;
+package kern.info;
 
 import java.util.ArrayList;
 
-import sudoku.kern.feldmatrix.FeldNummer;
-import sudoku.kern.feldmatrix.FeldNummerListe;
-import sudoku.kern.feldmatrix.ZahlenFeldNummern;
+import kern.feldmatrix.FeldNummer;
+import kern.feldmatrix.FeldNummerListe;
+import kern.feldmatrix.ZahlenFeldNummern;
 
 /**
  * Ein anderes Feld einer Gruppen ist mit einem Basis-Feld ein Feld-Paar,

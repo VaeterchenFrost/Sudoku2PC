@@ -1,6 +1,6 @@
-package sudoku.langerprozess;
+package langerprozess;
 
-import sudoku.Paar;
+import Paar;
 
 public interface FortschrittAnzeige extends FortschrittZeiger {
 	/**

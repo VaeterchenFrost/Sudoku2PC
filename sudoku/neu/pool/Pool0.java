@@ -1,8 +1,8 @@
-package sudoku.neu.pool;
+package neu.pool;
 
-import sudoku.kern.info.InfoSudoku;
-import sudoku.logik.Schwierigkeit;
-import sudoku.neu.NeuTyp;
+import kern.info.InfoSudoku;
+import logik.Schwierigkeit;
+import neu.NeuTyp;
 
 public interface Pool0 {
 	/**

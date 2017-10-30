@@ -1,9 +1,9 @@
-package sudoku.schwer.daten;
+package schwer.daten;
 
 import java.util.ArrayList;
 
-import sudoku.logik.Schwierigkeit;
-import sudoku.schwer.AnzeigeInfo;
+import logik.Schwierigkeit;
+import schwer.AnzeigeInfo;
 
 public class InfoKlareZeit implements AnzeigeInfo {
 	private double zeit;

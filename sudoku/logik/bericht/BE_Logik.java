@@ -1,9 +1,9 @@
-package sudoku.logik.bericht;
+package logik.bericht;
 
-import sudoku.kern.feldmatrix.FeldNummerMitZahl;
-import sudoku.kern.feldmatrix.ZahlenListe;
-import sudoku.logik.Logik_ID;
-import sudoku.logik.SudokuLogik;
+import kern.feldmatrix.FeldNummerMitZahl;
+import kern.feldmatrix.ZahlenListe;
+import logik.Logik_ID;
+import logik.SudokuLogik;
 
 /**
  * @author heroe

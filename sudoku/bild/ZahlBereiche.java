@@ -1,4 +1,4 @@
-package sudoku.bild;
+package bild;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -8,8 +8,8 @@ import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Set;
 
-import sudoku.bild.leser.ZahlBildInfo;
-import sudoku.kern.feldmatrix.FeldNummer;
+import bild.leser.ZahlBildInfo;
+import kern.feldmatrix.FeldNummer;
 
 /**
  * @author heroe

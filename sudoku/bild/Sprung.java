@@ -1,4 +1,4 @@
-package sudoku.bild;
+package bild;
 
 /**
  * @author heroe

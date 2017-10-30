@@ -1,4 +1,4 @@
-package sudoku.kern.feldmatrix;
+package kern.feldmatrix;
 
 /**
  * @author Hendrick

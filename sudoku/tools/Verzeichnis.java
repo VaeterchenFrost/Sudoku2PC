@@ -1,10 +1,10 @@
-package sudoku.tools;
+package tools;
 
 import java.io.File;
 import java.io.FilenameFilter;
 import java.util.Comparator;
 
-import sudoku.kern.exception.Exc;
+import kern.exception.Exc;
 
 /**
  * @author heroe

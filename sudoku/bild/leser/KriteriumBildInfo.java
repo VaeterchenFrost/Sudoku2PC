@@ -1,4 +1,4 @@
-package sudoku.bild.leser;
+package bild.leser;
 
 /**
  * @author heroe

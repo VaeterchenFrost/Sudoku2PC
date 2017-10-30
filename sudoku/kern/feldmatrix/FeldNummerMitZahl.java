@@ -1,4 +1,4 @@
-package sudoku.kern.feldmatrix;
+package kern.feldmatrix;
 
 public class FeldNummerMitZahl implements Comparable<FeldNummerMitZahl> {
 	private FeldNummer feldNummer;

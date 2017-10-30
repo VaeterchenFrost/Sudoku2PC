@@ -1,4 +1,4 @@
-package sudoku.kern.feldmatrix;
+package kern.feldmatrix;
 
 import java.util.HashMap;
 import java.util.Map;

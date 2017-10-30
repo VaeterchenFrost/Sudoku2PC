@@ -1,5 +1,5 @@
-package sudoku.logik;
+package logik;
 
 public interface LogikBerichtKurier {
-	public void nimmLogikBericht(sudoku.logik.bericht.BerichtLogik bericht);
+	public void nimmLogikBericht(logik.bericht.BerichtLogik bericht);
 }

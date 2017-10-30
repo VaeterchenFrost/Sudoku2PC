@@ -1,8 +1,8 @@
-package sudoku.kern.feldmatrix;
+package kern.feldmatrix;
 
 import java.util.ArrayList;
 
-import sudoku.kern.exception.Exc;
+import kern.exception.Exc;
 
 @SuppressWarnings("serial")
 public class FeldListe extends ArrayList<Feld> {

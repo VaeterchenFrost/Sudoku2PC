@@ -1,4 +1,4 @@
-package sudoku.bild.leser;
+package bild.leser;
 
 abstract class KriteriumZahl_BildInfo extends KriteriumUnd {
 	final int zahl;

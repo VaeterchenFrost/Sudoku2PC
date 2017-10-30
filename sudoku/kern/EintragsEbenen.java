@@ -1,9 +1,9 @@
-package sudoku.kern;
+package kern;
 
 import java.util.ArrayList;
 
-import sudoku.kern.exception.Exc;
-import sudoku.kern.feldmatrix.Feld;
+import kern.exception.Exc;
+import kern.feldmatrix.Feld;
 
 /**
  * @author Hendrick

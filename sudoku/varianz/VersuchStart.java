@@ -1,6 +1,6 @@
-package sudoku.varianz;
+package varianz;
 
-import sudoku.kern.info.FeldInfo;
+import kern.info.FeldInfo;
 
 /**
  * @author heroe

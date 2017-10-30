@@ -1,9 +1,9 @@
-package sudoku.tip;
+package tip;
 
 import java.util.ArrayList;
 
-import sudoku.bedienung.SudokuBedienung;
-import sudoku.logik.tipinfo.TipInfo;
+import bedienung.SudokuBedienung;
+import logik.tipinfo.TipInfo;
 
 public class TipKomprimierer {
 	/**
@@ -42,7 +42,7 @@ public class TipKomprimierer {
 
 			unnuetzeTips.add(testTip);
 			TipBericht testBericht = new TipBericht(unnuetzeTips);
-			sudoku.setzeTip(testBericht);
+			setzeTip(testBericht);
 			if (testBericht.istKomprimiertZu(basisBericht)) {
 				if (istSystemOut) {
 					System.out.println("Das Ignorieren dieses Tips beeinflusst nicht das Tip-Ergebnis.");

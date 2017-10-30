@@ -1,8 +1,8 @@
-package sudoku.bild;
+package bild;
 
 import java.awt.Point;
 
-import sudoku.Paar;
+import Paar;
 
 /**
  * @author heroe

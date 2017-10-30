@@ -1,4 +1,4 @@
-package sudoku.bild;
+package bild;
 
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
@@ -6,11 +6,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import sudoku.Paar;
-import sudoku.kern.exception.UnerwarteterInhalt;
-import sudoku.kern.info.InfoSudoku;
-//import sudoku.langerprozess.FortschrittZeiger;
-//import sudoku.langerprozess.LangerProzess;
+import kern.exception.UnerwarteterInhalt;
+import kern.info.InfoSudoku;
+import Paar;
 
 /**
  * @author heroe

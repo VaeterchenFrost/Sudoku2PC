@@ -1,7 +1,7 @@
-package sudoku.kern.info;
+package kern.info;
 
-import sudoku.kern.exception.Exc;
-import sudoku.kern.feldmatrix.FeldNummer;
+import kern.exception.Exc;
+import kern.feldmatrix.FeldNummer;
 
 /**
  *  Wandelt das Sudoku (dessen Vorgaben) in Text- (Datei-)Form.

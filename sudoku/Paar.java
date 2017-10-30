@@ -1,4 +1,3 @@
-package sudoku;
 
 public class Paar<K, V> {
 	final private K key;

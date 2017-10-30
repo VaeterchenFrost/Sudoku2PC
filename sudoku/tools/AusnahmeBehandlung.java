@@ -1,9 +1,9 @@
-package sudoku.tools;
+package tools;
 
 import java.io.IOException;
 import java.lang.Thread.UncaughtExceptionHandler;
 
-import sudoku.kern.exception.EndeDurchAusnahme;
+import kern.exception.EndeDurchAusnahme;
 
 public class AusnahmeBehandlung implements UncaughtExceptionHandler {
 	protected static String sCR = String.format("%n"); // "\n";

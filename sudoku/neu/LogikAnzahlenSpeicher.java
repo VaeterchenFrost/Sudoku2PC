@@ -1,12 +1,12 @@
-package sudoku.neu;
+package neu;
 
 import java.io.File;
 import java.io.IOException;
 
-import sudoku.logik.Logik_ID;
-import sudoku.schwer.daten.LogikAnzahlen;
-import sudoku.tools.TextDatei;
-import sudoku.tools.Verzeichnis;
+import logik.Logik_ID;
+import schwer.daten.LogikAnzahlen;
+import tools.TextDatei;
+import tools.Verzeichnis;
 
 class LogikAnzahlenSpeicher {
 

@@ -1,4 +1,4 @@
-package sudoku.bild;
+package bild;
 
 import java.awt.Color;
 import java.awt.Rectangle;

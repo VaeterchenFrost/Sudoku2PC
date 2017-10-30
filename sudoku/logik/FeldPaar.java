@@ -1,12 +1,12 @@
-package sudoku.logik;
+package logik;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import sudoku.kern.feldmatrix.Feld;
-import sudoku.kern.feldmatrix.FeldListe;
+import kern.feldmatrix.Feld;
+import kern.feldmatrix.FeldListe;
 
 /**
  * @author heroe

@@ -1,4 +1,4 @@
-package sudoku.neu.pool;
+package neu.pool;
 
 import java.io.File;
 import java.io.IOException;
@@ -7,14 +7,13 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.EnumMap;
 
-import sudoku.kern.exception.Exc;
-import sudoku.kern.exception.UnerwarteterNeuTyp;
-import sudoku.kern.info.InfoSudoku;
-import sudoku.logik.Schwierigkeit;
-import sudoku.neu.NeuTyp;
-import sudoku.neu.NeuTyp.Typ;
-import sudoku.neu.Zufall;
-import sudoku.tools.Verzeichnis;
+import kern.exception.Exc;
+import kern.exception.UnerwarteterNeuTyp;
+import kern.info.InfoSudoku;
+import logik.Schwierigkeit;
+import neu.NeuTyp;
+import neu.Zufall;
+import tools.Verzeichnis;
 
 /**
  * @author heroe
@@ -384,7 +383,7 @@ public class DateiPool implements Pool0 {
 			}
 
 			try {
-				sudoku.speichern(dateiName);
+				speichern(dateiName);
 				systemout(neuTyp, false, true, "");
 				if (istSystemOut) {
 					String s = String.format("DateiPool.systemout(): %s", gibZustand());

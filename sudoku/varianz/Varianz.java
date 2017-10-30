@@ -1,17 +1,17 @@
-package sudoku.varianz;
+package varianz;
 
 import java.util.ArrayList;
 
-import sudoku.kern.exception.Exc;
-import sudoku.kern.exception.SudokuFertig;
-import sudoku.kern.feldmatrix.FeldNummer;
-import sudoku.kern.feldmatrix.FeldNummerListe;
-import sudoku.kern.feldmatrix.FeldNummerMitZahl;
-import sudoku.kern.info.FeldInfo;
-import sudoku.kern.protokoll.ProtokollMarkierer;
-import sudoku.logik.Klugheit;
-import sudoku.logik.SudokuLogik;
-import sudoku.logik.SudokuLogik.SetzeMoeglicheErgebnis;
+import kern.exception.Exc;
+import kern.exception.SudokuFertig;
+import kern.feldmatrix.FeldNummer;
+import kern.feldmatrix.FeldNummerListe;
+import kern.feldmatrix.FeldNummerMitZahl;
+import kern.info.FeldInfo;
+import kern.protokoll.ProtokollMarkierer;
+import logik.Klugheit;
+import logik.SudokuLogik;
+import logik.SudokuLogik.SetzeMoeglicheErgebnis;
 
 public class Varianz {
 	// Und wieder besser mit awt: (http://www.willemer.de/informatik/java/awtdia.htm)
@@ -65,8 +65,8 @@ public class Varianz {
 	static private void sucheLoesungen(SudokuLogik sudoku, Klugheit klugheit, ProtokollMarkierer protokollMarkierer,
 			VersuchStarts erfolgteVersuchStarts, Loesungen loesungen, int maxAnzahl) throws Exc, SudokuFertig {
 		/*
-		 * 1. sudoku.setzeEintraegeAufKlareAlle(); 1. a) fertig => n=1; 1. b) Problem => unlösbar 1. c) unfertig => 2. 2. Mithilfe Protokoll und den Ebenen stückweise vorgehen:
-		 * Alles abbrechbar. Mit allen freien Feldern, mit allen Möglichen: Mögliche Zahl setzen + sudoku.setzeEintraegeAufKlareAlle() Mit ev. Verzweigungen.
+		 * 1. setzeEintraegeAufKlareAlle(); 1. a) fertig => n=1; 1. b) Problem => unlösbar 1. c) unfertig => 2. 2. Mithilfe Protokoll und den Ebenen stückweise vorgehen:
+		 * Alles abbrechbar. Mit allen freien Feldern, mit allen Möglichen: Mögliche Zahl setzen + setzeEintraegeAufKlareAlle() Mit ev. Verzweigungen.
 		 */
 
 		// ======================================= Startzustand vermerken
@@ -75,7 +75,7 @@ public class Varianz {
 		try {
 			// ======================================= Klare treiben
 			while (true) {
-				SetzeMoeglicheErgebnis ergebnis = sudoku.setzeMoegliche(klugheit, false, false);
+				SetzeMoeglicheErgebnis ergebnis = setzeMoegliche(klugheit, false, false);
 				if (ergebnis.gibProblem() != null) {
 					// Das Sudoku ist versaut: Für diesen Zustand gibt es keine Lösung
 					protokollMarkierer.markierungAnsteuern(markierungStart);
@@ -83,15 +83,15 @@ public class Varianz {
 				}
 
 				if (ergebnis.gibEintrag() != null) {
-					sudoku.setzeEintrag(ergebnis.gibEintrag());
+					setzeEintrag(ergebnis.gibEintrag());
 				}
 
-				if (!sudoku.istUnFertig()) {
+				if (!istUnFertig()) {
 					// Fertig => Lösung melden oder eintragen
 					if (loesungen == null) {
 						throw new SudokuFertig();
 					}
-					Loesung loesung = new Loesung(erfolgteVersuchStarts, sudoku.gibFeldInfos());
+					Loesung loesung = new Loesung(erfolgteVersuchStarts, gibFeldInfos());
 					loesungen.add(loesung);
 					if (istSystemOut) {
 						System.out.println(loesung.gibText());
@@ -110,22 +110,22 @@ public class Varianz {
 
 			// ======================================= Weiter versuchen
 
-			FeldNummerListe freieFelder = sudoku.gibFreieFelder();
+			FeldNummerListe freieFelder = gibFreieFelder();
 			FeldNummer feldNummer = freieFelder.get(0);
-			sudoku.setzeMoegliche(klugheit, false, false);
-			ArrayList<Integer> moegliche = sudoku.gibFeldInfo(feldNummer).gibMoegliche();
+			setzeMoegliche(klugheit, false, false);
+			ArrayList<Integer> moegliche = gibFeldInfo(feldNummer).gibMoegliche();
 
 			for (int VersuchNr = 0; VersuchNr < moegliche.size(); VersuchNr++) {
 				// Protokollmarkierung setzen
 				int markierungStartVersuch = protokollMarkierer.markierungSetzen();
 
 				// Mögliche Zahl setzen
-				sudoku.setzeMoegliche(klugheit, false, false);
+				setzeMoegliche(klugheit, false, false);
 				int zahl = moegliche.get(VersuchNr);
-				sudoku.setzeEintrag(new FeldNummerMitZahl(feldNummer, zahl));
+				setzeEintrag(new FeldNummerMitZahl(feldNummer, zahl));
 
 				// VersuchStart vermerken
-				FeldInfo feldInfo = sudoku.gibFeldInfo(feldNummer);
+				FeldInfo feldInfo = gibFeldInfo(feldNummer);
 				VersuchStart versuchStart = new VersuchStart(VersuchNr + 1, feldInfo);
 				VersuchStarts versuchStarts2 = new VersuchStarts(erfolgteVersuchStarts, versuchStart);
 

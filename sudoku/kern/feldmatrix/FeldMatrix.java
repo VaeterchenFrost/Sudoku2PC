@@ -1,15 +1,15 @@
-package sudoku.kern.feldmatrix;
+package kern.feldmatrix;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import sudoku.kern.EintragsEbenen;
-import sudoku.kern.animator.Animator;
-import sudoku.kern.exception.Exc;
-import sudoku.kern.info.FeldInfo;
-import sudoku.kern.info.FeldInfoListe;
-import sudoku.kern.info.InfoSudoku;
-import sudoku.kern.protokoll.Protokoll;
+import kern.EintragsEbenen;
+import kern.animator.Animator;
+import kern.exception.Exc;
+import kern.info.FeldInfo;
+import kern.info.FeldInfoListe;
+import kern.info.InfoSudoku;
+import kern.protokoll.Protokoll;
 
 /**
  * @author Hendrick

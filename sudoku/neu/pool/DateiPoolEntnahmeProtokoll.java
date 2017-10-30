@@ -1,4 +1,4 @@
-package sudoku.neu.pool;
+package neu.pool;
 
 import java.io.File;
 import java.io.IOException;
@@ -7,11 +7,11 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import sudoku.kern.exception.Exc;
-import sudoku.kern.info.InfoSudoku;
-import sudoku.logik.Schwierigkeit;
-import sudoku.schwer.daten.AnalysatorKlare;
-import sudoku.tools.Verzeichnis;
+import kern.exception.Exc;
+import kern.info.InfoSudoku;
+import logik.Schwierigkeit;
+import schwer.daten.AnalysatorKlare;
+import tools.Verzeichnis;
 
 /**
  * @author heroe

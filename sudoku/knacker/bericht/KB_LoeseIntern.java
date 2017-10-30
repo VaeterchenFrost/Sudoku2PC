@@ -1,4 +1,4 @@
-package sudoku.knacker.bericht;
+package knacker.bericht;
 
 public class KB_LoeseIntern extends KB_Eintrag1Zeile {
 	private int durchlauf;

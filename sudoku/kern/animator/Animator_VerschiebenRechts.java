@@ -1,6 +1,6 @@
-package sudoku.kern.animator;
+package kern.animator;
 
-import sudoku.kern.feldmatrix.FeldNummer;
+import kern.feldmatrix.FeldNummer;
 
 public class Animator_VerschiebenRechts extends Animator_Verschiebe1Kasten implements Animator {
 	@Override

@@ -1,22 +1,21 @@
-package sudoku.knacker;
+package knacker;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-import sudoku.kern.exception.Exc;
-import sudoku.kern.exception.SudokuFertig;
-import sudoku.kern.feldmatrix.FeldNummer;
-import sudoku.kern.feldmatrix.FeldNummerMitZahl;
-import sudoku.kern.feldmatrix.Problem;
-import sudoku.kern.feldmatrix.ZahlenListe;
-import sudoku.kern.protokoll.ProtokollMarkierer;
-import sudoku.knacker.bericht.BerichtKnacker;
-import sudoku.knacker.bericht.Schreiber;
-import sudoku.logik.Klugheit;
-import sudoku.logik.KnackerPartner;
-import sudoku.logik.SudokuLogik;
-import sudoku.logik.SudokuLogik.SetzeMoeglicheErgebnis;
-import sudoku.varianz.Varianz;
+import kern.exception.Exc;
+import kern.exception.SudokuFertig;
+import kern.feldmatrix.FeldNummer;
+import kern.feldmatrix.FeldNummerMitZahl;
+import kern.feldmatrix.Problem;
+import kern.feldmatrix.ZahlenListe;
+import kern.protokoll.ProtokollMarkierer;
+import knacker.bericht.BerichtKnacker;
+import logik.Klugheit;
+import logik.KnackerPartner;
+import logik.SudokuLogik;
+import logik.SudokuLogik.SetzeMoeglicheErgebnis;
+import varianz.Varianz;
 
 public class Knacker {
 	static private boolean istSystemOut = false;
@@ -113,9 +112,9 @@ public class Knacker {
 
 		while (true) {
 			if (schreibeBericht) {
-				sudoku.registriereBerichtKurier(schreiber);
+				registriereBerichtKurier(schreiber);
 			}
-			SetzeMoeglicheErgebnis moeglicheErgebnis = sudoku.setzeMoegliche(klugheit, hatZeit, false);
+			SetzeMoeglicheErgebnis moeglicheErgebnis = setzeMoegliche(klugheit, hatZeit, false);
 			if (moeglicheErgebnis.gibProblem() != null) {
 				problem = moeglicheErgebnis.gibProblem();
 				ergebnis = Ergebnis.problem(moeglicheErgebnis.gibProblem());
@@ -123,12 +122,12 @@ public class Knacker {
 			}
 			FeldNummerMitZahl eintrag = moeglicheErgebnis.gibEintrag();
 			if (eintrag != null) {
-				sudoku.setzeEintrag(eintrag);
+				setzeEintrag(eintrag);
 				if (schreibeBericht) {
 					schreiber.treibeKlareKlare1(1);
 				}
 			}
-			if (!sudoku.istUnFertig()) {
+			if (!istUnFertig()) {
 				istFertig = true;
 				ergebnis = Ergebnis.fertig();
 				break; // =======================>
@@ -170,7 +169,7 @@ public class Knacker {
 	 */
 	private void ursprungWiederHerstellen(boolean hatZeit, int markierungsID, Problem startProblem) throws Exc {
 		protokollMarkierer.markierungAnsteuern(markierungsID);
-		SetzeMoeglicheErgebnis ergebnis = sudoku.setzeMoegliche(klugheit, hatZeit, false);
+		SetzeMoeglicheErgebnis ergebnis = setzeMoegliche(klugheit, hatZeit, false);
 		Problem problem = ergebnis.gibProblem();
 		if (problem != null) {
 			if (!problem.equals(startProblem)) {
@@ -197,14 +196,14 @@ public class Knacker {
 		if (BerichtKnacker.istSystemOut()) {
 			System.out.println("   Knacke.setzePaarEintrag(): " + eintrag.gibZahl() + " in " + feldNummer);
 		}
-		sudoku.setzeEintrag(new FeldNummerMitZahl(feldNummer, eintrag.gibZahl()));
+		setzeEintrag(new FeldNummerMitZahl(feldNummer, eintrag.gibZahl()));
 
 	}
 
 	private void setzePaarAlternativen(KnackerPartner aPartner) throws Exc {
 		// Hier werden unter Umständen mehrere Felder gesetzt.
 		// Diese könnten also auch mehrere Ebenen erzeugen.
-		// Deshalb wird hier vorgebeugt mit sudoku.setzeEintragOhneVersuch().
+		// Deshalb wird hier vorgebeugt mit setzeEintragOhneVersuch().
 		// Diese müssen in der richtigen Reihenfolge wieder abgebaut werden.
 		ZahlenListe sollList = aPartner.gibAlternativen();
 
@@ -217,13 +216,13 @@ public class Knacker {
 					System.out.println("   Knacke.setzePaarAlternativen(): " + sollEintrag.gibZahl() + " in "
 							+ feldNummer);
 				}
-				sudoku.setzeEintrag(new FeldNummerMitZahl(feldNummer, sollEintrag.gibZahl()));
+				setzeEintrag(new FeldNummerMitZahl(feldNummer, sollEintrag.gibZahl()));
 			} else {
 				if (BerichtKnacker.istSystemOut()) {
 					System.out.println("   Knacke.setzePaarAlternativen() ohne Versuch: " + sollEintrag.gibZahl()
 							+ " in " + feldNummer);
 				}
-				sudoku.setzeEintragOhneVersuch(feldNummer, sollEintrag.gibZahl());
+				setzeEintragOhneVersuch(feldNummer, sollEintrag.gibZahl());
 			}
 		}
 	}
@@ -273,13 +272,13 @@ public class Knacker {
 		}
 
 		if (istKontrollVersuchErlaubt) {
-			ArrayList<KnackerPartner> felderMit2Moeglichen = sudoku.gibFelderMit2Moeglichen();
+			ArrayList<KnackerPartner> felderMit2Moeglichen = gibFelderMit2Moeglichen();
 			Problem problem = kontrolliereEintragVersuch(hatZeit, felderMit2Moeglichen);
 			if (problem != null) {
 				return problem;
 			}
 
-			ArrayList<KnackerPartner> feldPaare = sudoku.gibKnackerPartnerFeldPaare();
+			ArrayList<KnackerPartner> feldPaare = gibKnackerPartnerFeldPaare();
 			problem = kontrolliereEintragVersuch(hatZeit, feldPaare);
 			if (problem != null) {
 				return problem;
@@ -460,14 +459,14 @@ public class Knacker {
 					// Versuchen mit einer Versuchs-Ebene
 
 					// Partner-Liste bereitstellen
-					ArrayList<KnackerPartner> felderMit2Moeglichen = sudoku.gibFelderMit2Moeglichen();
+					ArrayList<KnackerPartner> felderMit2Moeglichen = gibFelderMit2Moeglichen();
 					ArrayList<KnackerPartner> feldPaare = null;
 
 					// Partner versuchen mit Kontrolle per treibeKlare();
 					wurdeEintragGesetzt = versuchePaare(hatZeit, felderMit2Moeglichen, false);
 					systemOutZeit("War Versuche 1 Ebene mit 2 möglichen im Feld");
 					if (!wurdeEintragGesetzt) {
-						feldPaare = sudoku.gibKnackerPartnerFeldPaare();
+						feldPaare = gibKnackerPartnerFeldPaare();
 						wurdeEintragGesetzt = versuchePaare(hatZeit, feldPaare, false);
 						systemOutZeit("War Versuche 1 Ebene mit FeldPaaren");
 					}
@@ -481,7 +480,7 @@ public class Knacker {
 					// systemOutZeit("War Versuche n Ebenen mit 2 möglichen im Feld");
 					// if (!wurdeEintragGesetzt) {
 					// if (feldPaare == null) {
-					// feldPaare = sudoku.gibPartnerFeldPaare();
+					// feldPaare = gibPartnerFeldPaare();
 					// }
 					// wurdeEintragGesetzt = versuchePaare(feldPaare, true);
 					// systemOutZeit("War Versuche n Ebenen mit FeldPaaren");
@@ -506,7 +505,7 @@ public class Knacker {
 			ergebnis = Ergebnis.fertig();
 		}
 
-		schreiber.loeseInternEnde(ergebnis, sudoku.ebeneGibNummer());
+		schreiber.loeseInternEnde(ergebnis, ebeneGibNummer());
 
 		if (!optionen.istGibTip()) {
 			// ursprungWiederHerstellen
@@ -574,7 +573,7 @@ public class Knacker {
 	 */
 	public ZahlTipErgebnis gibTipZahl(String sudokuName) throws Exc {
 		// Ist das Sudoku Fertig?
-		if (!sudoku.istUnFertig()) {
+		if (!istUnFertig()) {
 			return null;
 		}
 

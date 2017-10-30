@@ -1,10 +1,10 @@
-package sudoku.kern.feldmatrix;
+package kern.feldmatrix;
 
 import java.util.ArrayList;
 
-import sudoku.kern.EintragsEbenen;
-import sudoku.kern.exception.Exc;
-import sudoku.kern.feldmatrix.FeldListe.AnzahlEintraege;
+import kern.EintragsEbenen;
+import kern.exception.Exc;
+import kern.feldmatrix.FeldListe.AnzahlEintraege;
 
 /**
  * @author heroe

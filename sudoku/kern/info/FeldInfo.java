@@ -1,13 +1,13 @@
-package sudoku.kern.info;
+package kern.info;
 
 import java.util.ArrayList;
 
-import sudoku.kern.exception.FehlendeMoeglicheZahl;
-import sudoku.kern.feldmatrix.Eintrag;
-import sudoku.kern.feldmatrix.Feld;
-import sudoku.kern.feldmatrix.FeldNummer;
-import sudoku.kern.feldmatrix.FeldNummerMitZahl;
-import sudoku.kern.feldmatrix.ZahlenFeldNummern;
+import kern.exception.FehlendeMoeglicheZahl;
+import kern.feldmatrix.Eintrag;
+import kern.feldmatrix.Feld;
+import kern.feldmatrix.FeldNummer;
+import kern.feldmatrix.FeldNummerMitZahl;
+import kern.feldmatrix.ZahlenFeldNummern;
 
 // Ist gedacht zum Geben der Informationen zu einem Feld nach außen
 /**

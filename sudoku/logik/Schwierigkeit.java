@@ -1,8 +1,8 @@
-package sudoku.logik;
+package logik;
 
 import java.util.EnumMap;
 
-import sudoku.kern.exception.UnerwarteterInhalt;
+import kern.exception.UnerwarteterInhalt;
 
 public enum Schwierigkeit {
 	LEICHT, MITTEL, SCHWER, KNACKIG, EXPERTE, LOGIREX;

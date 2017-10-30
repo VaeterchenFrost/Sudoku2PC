@@ -1,4 +1,4 @@
-package sudoku.logik.tipinfo;
+package logik.tipinfo;
 
 /**
  * @author heroe

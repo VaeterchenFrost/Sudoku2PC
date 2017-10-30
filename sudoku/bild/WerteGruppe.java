@@ -1,11 +1,11 @@
-package sudoku.bild;
+package bild;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import sudoku.ArrayListInt;
-import sudoku.bild.WerteGruppeComparator.VergleichsArt;
+import bild.WerteGruppeComparator.VergleichsArt;
+import ArrayListInt;
 
 /**
  * @author heroe 

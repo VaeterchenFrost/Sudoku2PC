@@ -1,4 +1,4 @@
-package sudoku.kern.info;
+package kern.info;
 
 public class MoeglicheZahl {
 

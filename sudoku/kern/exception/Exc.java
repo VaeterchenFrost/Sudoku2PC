@@ -1,14 +1,14 @@
-package sudoku.kern.exception;
+package kern.exception;
 
 import java.util.ArrayList;
 
-import sudoku.kern.feldmatrix.Eintrag;
-import sudoku.kern.feldmatrix.Feld;
-import sudoku.kern.feldmatrix.FeldNummer;
-import sudoku.kern.feldmatrix.FeldNummerMitZahl;
-import sudoku.kern.feldmatrix.Problem;
-import sudoku.kern.protokoll.Protokoll.Markierung;
-import sudoku.kern.protokoll.ProtokollEintrag;
+import kern.feldmatrix.Eintrag;
+import kern.feldmatrix.Feld;
+import kern.feldmatrix.FeldNummer;
+import kern.feldmatrix.FeldNummerMitZahl;
+import kern.feldmatrix.Problem;
+import kern.protokoll.Protokoll.Markierung;
+import kern.protokoll.ProtokollEintrag;
 
 /**
  * @author Hendrick

@@ -1,4 +1,4 @@
-package sudoku.bild;
+package bild;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 
-import sudoku.bild.WerteGruppeComparator.VergleichsArt;
+import bild.WerteGruppeComparator.VergleichsArt;
 
 class LinienStriche {
 

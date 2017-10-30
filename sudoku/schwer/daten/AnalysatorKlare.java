@@ -1,19 +1,19 @@
-package sudoku.schwer.daten;
+package schwer.daten;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import sudoku.knacker.bericht.KB_KlareSetzeMoegliche;
-import sudoku.logik.Logik_ID;
-import sudoku.logik.SudokuLogik;
-import sudoku.logik.bericht.BE_Durchlauf;
-import sudoku.logik.bericht.BE_Ende;
-import sudoku.logik.bericht.BE_Logik;
-import sudoku.logik.bericht.BE_Start;
+import knacker.bericht.KB_KlareSetzeMoegliche;
+import logik.Logik_ID;
+import logik.SudokuLogik;
+import logik.bericht.BE_Durchlauf;
+import logik.bericht.BE_Ende;
+import logik.bericht.BE_Logik;
+import logik.bericht.BE_Start;
 
 /**
  * @author Hendrick
- * Analysiert den sudoku.knacker.bericht.BerichtKnacker:
+ * Analysiert den knacker.bericht.BerichtKnacker:
  * dessen Einträge KB_KlareSetzeMoegliche, die die Logik-Berichte beinhalten.
  */
 /**
@@ -24,7 +24,7 @@ public class AnalysatorKlare {
 	static private boolean istSystemOut = false;
 	static private boolean istSystemOutZeit = false; // true;
 
-	public static ArrayList<InfoKlareDetail> wandelUm(sudoku.knacker.bericht.BerichtKnacker bericht) {
+	public static ArrayList<InfoKlareDetail> wandelUm(knacker.bericht.BerichtKnacker bericht) {
 
 		ArrayList<InfoKlareDetail> infos = wandelUmIntern(bericht);
 		if (istSystemOut) {
@@ -54,7 +54,7 @@ public class AnalysatorKlare {
 	 * @return ArrayList<InfoKlareGruppen>: 
 	 * 		Zu jedem Berichteintrag KB_KlareSetzeMoegliche ein Eintrag InfoKlareGruppen.
 	 */
-	private static ArrayList<InfoKlareDetail> wandelUmIntern(sudoku.knacker.bericht.BerichtKnacker knackerBericht) {
+	private static ArrayList<InfoKlareDetail> wandelUmIntern(knacker.bericht.BerichtKnacker knackerBericht) {
 		ArrayList<InfoKlareDetail> laufListe = new ArrayList<>();
 
 		for (int i = 0; i < knackerBericht.size(); i++) {
@@ -81,7 +81,7 @@ public class AnalysatorKlare {
 	 * @param infoMoegliche Beinhaltet einen Logiklauf. Dieser kann mehrere Durchläfe beinhalten!
 	 */
 	private static void fuelleLaufListe(ArrayList<InfoKlareDetail> laufListe, KB_KlareSetzeMoegliche infoMoegliche) {
-		sudoku.logik.bericht.BerichtLogik bericht = infoMoegliche.gibBericht();
+		logik.bericht.BerichtLogik bericht = infoMoegliche.gibBericht();
 
 		BE_Start berichtEintragStart = null;
 		ArrayList<BE_Logik> logikEintraege = new ArrayList<>();

@@ -1,4 +1,4 @@
-package sudoku.knacker.bericht;
+package knacker.bericht;
 
 /**
  * @author Hendrick

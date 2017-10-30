@@ -1,6 +1,6 @@
-package sudoku.tip;
+package tip;
 
-import sudoku.logik.tipinfo.EinTipText;
+import logik.tipinfo.EinTipText;
 
 public class TipDetailTexte {
 	public String ueberschrift;

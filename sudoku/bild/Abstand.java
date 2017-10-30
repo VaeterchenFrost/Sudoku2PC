@@ -1,4 +1,4 @@
-package sudoku.bild;
+package bild;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,9 +1,9 @@
-package sudoku.logik;
+package logik;
 
 import java.util.ArrayList;
 
-import sudoku.kern.feldmatrix.FeldNummerListe;
-import sudoku.kern.feldmatrix.ZahlenListe;
+import kern.feldmatrix.FeldNummerListe;
+import kern.feldmatrix.ZahlenListe;
 
 /**
  * @author Hendrick

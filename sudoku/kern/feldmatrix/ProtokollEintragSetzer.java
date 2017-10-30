@@ -1,6 +1,6 @@
-package sudoku.kern.feldmatrix;
+package kern.feldmatrix;
 
-import sudoku.kern.exception.Exc;
+import kern.exception.Exc;
 
 /**
  * @author Hendrick

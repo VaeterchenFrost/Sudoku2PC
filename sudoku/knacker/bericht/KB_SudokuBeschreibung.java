@@ -1,6 +1,6 @@
-package sudoku.knacker.bericht;
+package knacker.bericht;
 
-import sudoku.logik.SudokuLogik;
+import logik.SudokuLogik;
 
 public class KB_SudokuBeschreibung extends KB_Eintrag1Zeile {
 	String name;

@@ -1,4 +1,4 @@
-package sudoku.bild;
+package bild;
 
 import java.awt.Dimension;
 import java.awt.Rectangle;
@@ -7,12 +7,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import sudoku.bild.leser.ZahlLeser;
-import sudoku.kern.feldmatrix.FeldNummer;
-import sudoku.kern.info.FeldInfo;
-import sudoku.kern.info.FeldInfoListe;
-import sudoku.kern.info.InfoSudoku;
-import sudoku.logik.SudokuLogik;
+import bild.leser.ZahlLeser;
+import kern.feldmatrix.FeldNummer;
+import kern.info.FeldInfo;
+import kern.info.FeldInfoListe;
+import kern.info.InfoSudoku;
+import logik.SudokuLogik;
 
 /**
  * @author heroe

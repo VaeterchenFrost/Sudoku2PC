@@ -1,6 +1,6 @@
-package sudoku.logik.bericht;
+package logik.bericht;
 
-import sudoku.logik.Klugheit;
+import logik.Klugheit;
 
 public class BE_Start {
 	private Klugheit klugheit;

@@ -1,22 +1,22 @@
-package sudoku.neu;
+package neu;
 
-import sudoku.kern.animator.Animator;
-import sudoku.kern.animator.Animator_SpiegelnMittelPunkt;
-import sudoku.kern.exception.Exc;
-import sudoku.kern.feldmatrix.FeldMatrix;
-import sudoku.kern.feldmatrix.FeldNummer;
-import sudoku.kern.feldmatrix.FeldNummerListe;
-import sudoku.kern.info.FeldInfo;
-import sudoku.kern.info.InfoSudoku;
-import sudoku.kern.protokoll.Protokoll.Schrittweite;
-import sudoku.knacker.Ergebnis;
-import sudoku.knacker.Knacker.VersuchsEbenen;
-import sudoku.knacker.bericht.BerichtKnacker;
-import sudoku.logik.Klugheit;
-import sudoku.logik.Schwierigkeit;
-import sudoku.schwer.Analysator;
-import sudoku.schwer.SudokuSchwierigkeit;
-import sudoku.schwer.daten.LogikAnzahlen;
+import kern.animator.Animator;
+import kern.animator.Animator_SpiegelnMittelPunkt;
+import kern.exception.Exc;
+import kern.feldmatrix.FeldMatrix;
+import kern.feldmatrix.FeldNummer;
+import kern.feldmatrix.FeldNummerListe;
+import kern.info.FeldInfo;
+import kern.info.InfoSudoku;
+import kern.protokoll.Protokoll.Schrittweite;
+import knacker.Ergebnis;
+import knacker.Knacker.VersuchsEbenen;
+import knacker.bericht.BerichtKnacker;
+import logik.Klugheit;
+import logik.Schwierigkeit;
+import schwer.Analysator;
+import schwer.SudokuSchwierigkeit;
+import schwer.daten.LogikAnzahlen;
 
 class Generator extends Generator1 {
 

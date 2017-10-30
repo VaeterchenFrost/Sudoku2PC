@@ -1,9 +1,9 @@
-package sudoku.neu.pool;
+package neu.pool;
 
 import java.util.ArrayList;
 
-import sudoku.kern.info.InfoSudoku;
-import sudoku.neu.NeuTyp;
+import kern.info.InfoSudoku;
+import neu.NeuTyp;
 
 class Topf {
 	private NeuTyp neuTyp;

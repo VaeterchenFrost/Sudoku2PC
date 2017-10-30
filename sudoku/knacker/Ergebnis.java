@@ -1,6 +1,6 @@
-package sudoku.knacker;
+package knacker;
 
-import sudoku.kern.feldmatrix.Problem;
+import kern.feldmatrix.Problem;
 
 public class Ergebnis {
 

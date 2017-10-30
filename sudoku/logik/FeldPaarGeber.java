@@ -1,8 +1,8 @@
-package sudoku.logik;
+package logik;
 
 import java.util.ArrayList;
 
-import sudoku.kern.feldmatrix.FeldListe;
+import kern.feldmatrix.FeldListe;
 
 abstract class FeldPaarGeber {
 	/**

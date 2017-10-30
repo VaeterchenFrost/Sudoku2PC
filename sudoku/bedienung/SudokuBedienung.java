@@ -1,40 +1,40 @@
-package sudoku.bedienung;
+package bedienung;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
-import sudoku.kern.EintragsEbenen;
-import sudoku.kern.animator.Animator;
-import sudoku.kern.exception.EndeDurchAusnahme;
-import sudoku.kern.exception.Exc;
-import sudoku.kern.feldmatrix.FeldNummer;
-import sudoku.kern.feldmatrix.FeldNummerMitZahl;
-import sudoku.kern.feldmatrix.Problem;
-import sudoku.kern.info.FeldInfo;
-import sudoku.kern.info.InfoSudoku;
-import sudoku.kern.protokoll.Protokoll;
-import sudoku.kern.protokoll.Protokoll.Schrittweite;
-import sudoku.kern.protokoll.ProtokollKursorInfo;
-import sudoku.kern.protokoll.Protokoll_IO;
-import sudoku.knacker.Ergebnis;
-import sudoku.knacker.Knacker;
-import sudoku.langerprozess.FortschrittAnzeige;
-import sudoku.logik.Klugheit;
-import sudoku.logik.Logik_ID;
-import sudoku.logik.Schwierigkeit;
-import sudoku.logik.SudokuLogik;
-import sudoku.neu.NeuTyp;
-import sudoku.neu.SudokuPool;
-import sudoku.neu.pool.NeuTypOption;
-import sudoku.neu.pool.PoolInfo;
-import sudoku.neu.pool.PoolInfoEntnommene;
-import sudoku.schwer.Analysator;
-import sudoku.schwer.SudokuSchwierigkeit;
-import sudoku.schwer.daten.Schwierigkeiten;
-import sudoku.tip.TipBericht;
-import sudoku.tools.TextDatei;
-import sudoku.varianz.Loesungen;
-import sudoku.varianz.Varianz;
+import kern.EintragsEbenen;
+import kern.animator.Animator;
+import kern.exception.EndeDurchAusnahme;
+import kern.exception.Exc;
+import kern.feldmatrix.FeldNummer;
+import kern.feldmatrix.FeldNummerMitZahl;
+import kern.feldmatrix.Problem;
+import kern.info.FeldInfo;
+import kern.info.InfoSudoku;
+import kern.protokoll.Protokoll;
+import kern.protokoll.Protokoll.Schrittweite;
+import kern.protokoll.ProtokollKursorInfo;
+import kern.protokoll.Protokoll_IO;
+import knacker.Ergebnis;
+import knacker.Knacker;
+import langerprozess.FortschrittAnzeige;
+import logik.Klugheit;
+import logik.Logik_ID;
+import logik.Schwierigkeit;
+import logik.SudokuLogik;
+import neu.NeuTyp;
+import neu.SudokuPool;
+import neu.pool.NeuTypOption;
+import neu.pool.PoolInfo;
+import neu.pool.PoolInfoEntnommene;
+import schwer.Analysator;
+import schwer.SudokuSchwierigkeit;
+import schwer.daten.Schwierigkeiten;
+import tip.TipBericht;
+import tools.TextDatei;
+import varianz.Loesungen;
+import varianz.Varianz;
 
 public class SudokuBedienung {
 	// Für Fehlersuche
@@ -68,7 +68,7 @@ public class SudokuBedienung {
 	private Problem problem;
 
 	// Vermerkt den letzten Bericht der Logik bis zum Abruf per gibTipBericht()
-	// private sudoku.tip.TipBericht tipBericht;
+	// private tip.TipBericht tipBericht;
 
 	/**
 	 * @param externeAusnahmeBehandlung falls != null wird im internen Thread 
@@ -76,7 +76,7 @@ public class SudokuBedienung {
 	 * 				ansonsten die Standardbehandlung des genannten Typs. 
 	 * @throws Exc
 	 */
-	public SudokuBedienung(sudoku.tools.AusnahmeBehandlung externeAusnahmeBehandlung) throws Exc {
+	public SudokuBedienung(tools.AusnahmeBehandlung externeAusnahmeBehandlung) throws Exc {
 		klugheit = new Klugheit(true);
 		sudokuLogik = new SudokuLogik(new EintragsEbenen());
 		protokoll = new Protokoll(sudokuLogik);

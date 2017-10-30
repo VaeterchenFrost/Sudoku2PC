@@ -1,8 +1,8 @@
-package sudoku.neu;
+package neu;
 
 import java.util.ArrayList;
 
-import sudoku.logik.Schwierigkeit;
+import logik.Schwierigkeit;
 
 /**
  * @author Hendrick

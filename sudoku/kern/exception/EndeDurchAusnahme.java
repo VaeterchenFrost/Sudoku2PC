@@ -1,4 +1,4 @@
-package sudoku.kern.exception;
+package kern.exception;
 
 /**
  * @author heroe

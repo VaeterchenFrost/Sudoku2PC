@@ -1,4 +1,4 @@
-package sudoku.tools;
+package tools;
 
 public class Starter {
 

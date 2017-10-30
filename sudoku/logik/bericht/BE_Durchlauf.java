@@ -1,4 +1,4 @@
-package sudoku.logik.bericht;
+package logik.bericht;
 
 public class BE_Durchlauf {
 	int durchLauf;

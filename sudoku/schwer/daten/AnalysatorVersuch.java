@@ -1,16 +1,16 @@
-package sudoku.schwer.daten;
+package schwer.daten;
 
 import java.util.ArrayList;
 
-import sudoku.kern.EintragsEbenen;
-import sudoku.knacker.bericht.BerichtKnacker;
-import sudoku.knacker.bericht.KB_LoeseInternEnde;
-import sudoku.knacker.bericht.KB_VersuchStart;
-import sudoku.knacker.bericht.KB_VersuchePaare;
+import kern.EintragsEbenen;
+import knacker.bericht.BerichtKnacker;
+import knacker.bericht.KB_LoeseInternEnde;
+import knacker.bericht.KB_VersuchStart;
+import knacker.bericht.KB_VersuchePaare;
 
 /**
  * @author Hendrick
- * Analysiert den sudoku.knacker.bericht.BerichtKnacker auf vorhandene Versuche
+ * Analysiert den knacker.bericht.BerichtKnacker auf vorhandene Versuche
  */
 public class AnalysatorVersuch {
 
@@ -38,7 +38,7 @@ public class AnalysatorVersuch {
 	 * @param bericht
 	 * @return null wenn keine Versuche stattgefunden haben
 	 */
-	public static InfoVersucheOK gibVersucheOK(sudoku.knacker.bericht.BerichtKnacker bericht) {
+	public static InfoVersucheOK gibVersucheOK(knacker.bericht.BerichtKnacker bericht) {
 		int maxEbene = gibMaxEbene(bericht);
 		int nVersucheOK = gibAnzahlVersuche(maxEbene);
 
@@ -54,7 +54,7 @@ public class AnalysatorVersuch {
 	 * @param bericht
 	 * @return null wenn keine Versuche stattgefunden haben
 	 */
-	public static ArrayList<InfoVersuche> gibVersuchsStarts(sudoku.knacker.bericht.BerichtKnacker bericht) {
+	public static ArrayList<InfoVersuche> gibVersuchsStarts(knacker.bericht.BerichtKnacker bericht) {
 		int maxEbene = gibMaxEbene(bericht);
 		int nVersucheOK = gibAnzahlVersuche(maxEbene);
 

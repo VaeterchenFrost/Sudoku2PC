@@ -1,16 +1,16 @@
-package sudoku.kern.protokoll;
+package kern.protokoll;
 
 import java.util.ArrayList;
 
-import sudoku.kern.EintragsEbenen;
-import sudoku.kern.animator.Animator;
-import sudoku.kern.exception.Exc;
-import sudoku.kern.feldmatrix.Eintrag;
-import sudoku.kern.feldmatrix.FeldNummer;
-import sudoku.kern.feldmatrix.FeldNummerMitZahl;
-import sudoku.kern.feldmatrix.ProtokollEintragSetzer;
-import sudoku.kern.feldmatrix.ProtokollSchreiber;
-import sudoku.logik.SudokuLogik;
+import kern.EintragsEbenen;
+import kern.animator.Animator;
+import kern.exception.Exc;
+import kern.feldmatrix.Eintrag;
+import kern.feldmatrix.FeldNummer;
+import kern.feldmatrix.FeldNummerMitZahl;
+import kern.feldmatrix.ProtokollEintragSetzer;
+import kern.feldmatrix.ProtokollSchreiber;
+import logik.SudokuLogik;
 
 /**
  * @author Hendrick
@@ -58,7 +58,7 @@ public class Protokoll implements ProtokollSchreiber, ProtokollMarkierer {
 	// -------------------------------------------------------------------
 	public Protokoll(SudokuLogik sudoku) {
 		reset();
-		sudoku.setzeProtokoll(this);
+		setzeProtokoll(this);
 	}
 
 	public void setzeEintragSetzer(ProtokollEintragSetzer eintragSetzer) {

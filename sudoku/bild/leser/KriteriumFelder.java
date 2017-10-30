@@ -1,8 +1,8 @@
-package sudoku.bild.leser;
+package bild.leser;
 
 import java.util.ArrayList;
 
-import sudoku.kern.feldmatrix.FeldNummer;
+import kern.feldmatrix.FeldNummer;
 
 class KriteriumFelder implements KriteriumBildInfo {
 	/**

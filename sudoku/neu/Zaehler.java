@@ -1,4 +1,4 @@
-package sudoku.neu;
+package neu;
 
 import java.util.ArrayList;
 

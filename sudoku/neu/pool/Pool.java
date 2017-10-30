@@ -1,14 +1,13 @@
-package sudoku.neu.pool;
+package neu.pool;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-import sudoku.kern.exception.UnerwarteterNeuTyp;
-import sudoku.kern.info.InfoSudoku;
-import sudoku.logik.Schwierigkeit;
-import sudoku.neu.NeuTyp;
-import sudoku.neu.NeuTyp.Typ;
+import kern.exception.UnerwarteterNeuTyp;
+import kern.info.InfoSudoku;
+import logik.Schwierigkeit;
+import neu.NeuTyp;
 
 /**
  * @author Hendrick
@@ -57,7 +56,7 @@ class Pool implements Pool0 {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see sudoku.schwer.neu.pool.Pool0#gibSudoku(sudoku.schwer.neu.NeuTyp, sudoku.schwer.neu.pool.NeuTypOption)
+	 * @see schwer.neu.pool.Pool0#gibSudoku(schwer.neu.NeuTyp, schwer.neu.pool.NeuTypOption)
 	 */
 	public InfoSudoku gibSudoku(NeuTyp neuTyp, NeuTypOption option) {
 		synchronized (pool) {
