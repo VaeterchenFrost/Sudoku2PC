@@ -84,7 +84,7 @@ public class TextKonverter {
 					}
 				}
 			} // for spalte
-		}// for zeile
+		} // for zeile
 
 		return text;
 	}

@@ -39,8 +39,8 @@ public class DateiDialog extends FileDialog {
 	}
 
 	public DateiDialog(JFrame frame, boolean istSpeichern) {
-		super(frame, istSpeichern ? "Sudoku speichern" : "Sudoku laden", istSpeichern ? FileDialog.SAVE
-				: FileDialog.LOAD);
+		super(frame, istSpeichern ? "Sudoku speichern" : "Sudoku laden",
+				istSpeichern ? FileDialog.SAVE : FileDialog.LOAD);
 
 		this.setDirectory("C:\\Benutzer");
 		this.setFilenameFilter(new DateiFilter());

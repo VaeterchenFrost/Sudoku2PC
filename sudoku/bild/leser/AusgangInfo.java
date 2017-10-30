@@ -158,7 +158,8 @@ class AusgangInfo {
 	 * @param yAusweich Ausweich-Richtung
 	 * @return true falls ein Ausgang in die X-Richtung existiert
 	 */
-	static private boolean istAusgang(BufferedImage image, Point start, int xZiel, int yAusweich, boolean istSystemOut) {
+	static private boolean istAusgang(BufferedImage image, Point start, int xZiel, int yAusweich,
+			boolean istSystemOut) {
 		int x = start.x;
 		int y = start.y;
 		int xRichtung = 1;

@@ -148,7 +148,8 @@ public class FeldMaler {
 	 * @param maxFontSize Wenn > 0 wird die Textgröße hierauf beschränkt. 
 	 * 			(Es wird ansonsten der Text so groß wie r hergibt gemalt.)
 	 */
-	public static void maleText(Graphics g, Rectangle r, Color cHintergrund, Color cText, String text1, int maxFontSize) {
+	public static void maleText(Graphics g, Rectangle r, Color cHintergrund, Color cText, String text1,
+			int maxFontSize) {
 		maleText(g, r, cHintergrund, cText, text1, null, maxFontSize);
 	}
 

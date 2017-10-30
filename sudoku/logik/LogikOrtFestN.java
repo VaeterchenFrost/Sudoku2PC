@@ -108,7 +108,8 @@ class LogikOrtFestN implements Logik__Interface {
 
 							// Die zu löschenden Zahlen vermerken
 							ZahlenListe loeschZahlen = new ZahlenListe();
-							for (int iBasisZahlFeld = 0; iBasisZahlFeld < basisZahlFelderListe.size(); iBasisZahlFeld++) {
+							for (int iBasisZahlFeld = 0; iBasisZahlFeld < basisZahlFelderListe
+									.size(); iBasisZahlFeld++) {
 								Feld feld = basisZahlFelderListe.get(iBasisZahlFeld);
 								ArrayList<Integer> moeglicheDesFeldes = feld.gibMoegliche();
 								for (Integer moeglicheZahlDesFeldes : moeglicheDesFeldes) {
@@ -121,8 +122,8 @@ class LogikOrtFestN implements Logik__Interface {
 							}
 
 							if (!loeschZahlen.isEmpty()) {
-								Geschwister geschwister = new Geschwister(geschwisterZahlen, new FeldNummerListe(
-										basisZahlFelder), loeschZahlen);
+								Geschwister geschwister = new Geschwister(geschwisterZahlen,
+										new FeldNummerListe(basisZahlFelder), loeschZahlen);
 								// // Diese Geschwisterzahlen einzig als Mögliche stehen lassen in ihren Feldern
 								// basisZahlFelder.setzeMoegliche(geschwisterZahlen);
 								return geschwister;

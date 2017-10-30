@@ -142,7 +142,7 @@ public class Protokoll implements ProtokollSchreiber, ProtokollMarkierer {
 				} else {
 					break;
 				}
-			}// while
+			} // while
 			break;
 		case EINTRAG:
 			geheEinenSchrittVorwaerts();
@@ -180,7 +180,7 @@ public class Protokoll implements ProtokollSchreiber, ProtokollMarkierer {
 				} else {
 					break;
 				}
-			}// while
+			} // while
 			break;
 		case EINTRAG:
 			geheEinenSchrittRueckwaerts();
@@ -398,8 +398,8 @@ public class Protokoll implements ProtokollSchreiber, ProtokollMarkierer {
 
 			// sFeldNummer
 			{
-				String s = String.format(" %d%d", protokollEintrag.gibFeldNummer().gibZeile(), protokollEintrag
-						.gibFeldNummer().gibSpalte());
+				String s = String.format(" %d%d", protokollEintrag.gibFeldNummer().gibZeile(),
+						protokollEintrag.gibFeldNummer().gibSpalte());
 				sFeldNummer += s;
 			}
 

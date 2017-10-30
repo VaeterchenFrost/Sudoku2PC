@@ -35,7 +35,7 @@ public class FeldAnzeigen implements ComponentListener // Anpassung der FeldAnze
 		for (int zeile = 1; zeile < 10; zeile++) {
 			for (int spalte = 1; spalte < 10; spalte++) {
 				FeldAnzeige b = new FeldAnzeige(new FeldNummer(spalte, zeile), this.feldAnzeigen, toolBarLinks, sudoku,
-				// statusBar,
+						// statusBar,
 						optionen);
 				container.add(b);
 			}

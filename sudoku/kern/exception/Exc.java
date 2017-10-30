@@ -61,7 +61,8 @@ public class Exc extends Exception {
 		return new Exc(text);
 	}
 
-	static public Exc protokollMarkierungIstOhneNachfolger(int markierungId, int markierungKursor, int anzahlEintraege) {
+	static public Exc protokollMarkierungIstOhneNachfolger(int markierungId, int markierungKursor,
+			int anzahlEintraege) {
 		String text = String.format("Protokoll-Markierung (id=%d, kursor=%d) ist ohne Nachfolger: Anzahl Einträge=%d",
 				markierungId, markierungKursor, anzahlEintraege);
 

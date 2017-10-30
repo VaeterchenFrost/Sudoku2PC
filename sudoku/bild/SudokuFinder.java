@@ -224,7 +224,8 @@ public class SudokuFinder {
 		}
 	}
 
-	static private List<Abstand> gibGuteAbstaende(List<Abstand> abstaende, int nGuteMin, int abstandMin, int abstandMax) {
+	static private List<Abstand> gibGuteAbstaende(List<Abstand> abstaende, int nGuteMin, int abstandMin,
+			int abstandMax) {
 		// Der Iterator Richtung Anfang: Sitzt jetzt auf dem Ende
 		AbstandIterator iZu0 = new AbstandIterator(abstaende, true);
 
@@ -261,17 +262,17 @@ public class SudokuFinder {
 		List<Abstand> abstaende = Abstand.gibAbstaende(striche);
 
 		if (abstaende == null) {
-			systemOut(String
-					.format("gib1StrichGruppe() %s: ------------------------------------ Keine Abstände: %d Striche sind zuwenig (%d sind nötig)",
-							linienName, striche.size(), anzahlAbstaendeMin));
+			systemOut(String.format(
+					"gib1StrichGruppe() %s: ------------------------------------ Keine Abstände: %d Striche sind zuwenig (%d sind nötig)",
+					linienName, striche.size(), anzahlAbstaendeMin));
 			return null;
 		}
 
 		// Solange ausreichend unbewertete Abstände verfügbar sind
 		if (abstaende.size() < anzahlAbstaendeMin) {
-			systemOut(String
-					.format("gib1StrichGruppe() %s: ------------------------------------ %d Striche sind zuwenig (%d sind nötig)",
-							linienName, striche.size(), anzahlAbstaendeMin));
+			systemOut(String.format(
+					"gib1StrichGruppe() %s: ------------------------------------ %d Striche sind zuwenig (%d sind nötig)",
+					linienName, striche.size(), anzahlAbstaendeMin));
 			return null;
 		}
 		// Toleranz der Abstände in Prozent des Durchschnitts der guten Abstände.

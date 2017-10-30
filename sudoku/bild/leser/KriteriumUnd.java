@@ -39,8 +39,8 @@ class KriteriumUnd implements KriteriumBildInfo {
 		durchschnitt /= kriterien.length;
 
 		if (istSystemOutZahl) {
-			System.out.println(String.format("Erfüllt=%1.1f%% %s %s", durchschnitt, getClass().getSimpleName(),
-					this.name));
+			System.out.println(
+					String.format("Erfüllt=%1.1f%% %s %s", durchschnitt, getClass().getSimpleName(), this.name));
 		}
 
 		return durchschnitt;

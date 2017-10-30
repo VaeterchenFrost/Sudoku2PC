@@ -26,8 +26,8 @@ public class InfoTopf extends Info {
 	 */
 	public InfoTopf(AblageVorschrift ablageVorschrift, int anzahl, int anzahlDoppel, long groesse, Integer leichtestes,
 			Integer schwerstes, Long aeltestes, Long juengstes) {
-		super(anzahl, groesse, leichtestes, schwerstes, Info.gibDatumMitZeit(aeltestes), Info
-				.gibDatumMitZeit(juengstes));
+		super(anzahl, groesse, leichtestes, schwerstes, Info.gibDatumMitZeit(aeltestes),
+				Info.gibDatumMitZeit(juengstes));
 		this.ablageVorschrift = ablageVorschrift;
 		this.anzahlDoppel = anzahlDoppel;
 	}

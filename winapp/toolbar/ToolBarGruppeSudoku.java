@@ -81,8 +81,8 @@ public class ToolBarGruppeSudoku {
 
 		public ButtonEntnommenes(JFrame frame, String applikationsTitel, EintragsModus eintragsModus,
 				SudokuBedienung sudoku, StatusBar statusBar) {
-			super("Entnommen...", "Ein zuvor entnommenes Sudoku laden", frame, applikationsTitel, eintragsModus,
-					sudoku, statusBar);
+			super("Entnommen...", "Ein zuvor entnommenes Sudoku laden", frame, applikationsTitel, eintragsModus, sudoku,
+					statusBar);
 			this.addActionListener(this);
 		}
 
@@ -198,10 +198,11 @@ public class ToolBarGruppeSudoku {
 
 		public ButtonDatei(boolean istSpeichern, JFrame frame, String applikationsTitel, EintragsModus eintragsModus,
 				SudokuBedienung sudoku, StatusBar statusBar) {
-			super(istSpeichern ? "Speichern..." : "Laden...", istSpeichern ? "Sudoku in einer Sudoku-Text-Datei"
-					+ InfoSudoku.dateiErweiterung + " speichern" : ToolTip
-					.gibToolTip(new String[] { "Sudoku aus einer Sudoku-Text-Datei" + InfoSudoku.dateiErweiterung
-							+ " laden" }), frame, applikationsTitel, eintragsModus, sudoku, statusBar);
+			super(istSpeichern ? "Speichern..." : "Laden...",
+					istSpeichern ? "Sudoku in einer Sudoku-Text-Datei" + InfoSudoku.dateiErweiterung + " speichern"
+							: ToolTip.gibToolTip(new String[] {
+									"Sudoku aus einer Sudoku-Text-Datei" + InfoSudoku.dateiErweiterung + " laden" }),
+					frame, applikationsTitel, eintragsModus, sudoku, statusBar);
 			dialog = new DateiDialog(frame, istSpeichern);
 			this.addActionListener(this);
 		}

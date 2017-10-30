@@ -102,8 +102,8 @@ public class Analysator {
 		klugheit.setzeExtrem(false);
 
 		do {
-			Ergebnis ergebnis = knacker.loese(VersuchsEbenen.KEINE, "Schwierigkeitsermittlung Ohne Versuch Klugheit "
-					+ klugheit, true);
+			Ergebnis ergebnis = knacker.loese(VersuchsEbenen.KEINE,
+					"Schwierigkeitsermittlung Ohne Versuch Klugheit " + klugheit, true);
 			if (ergebnis.gibArt() == Ergebnis.Art.FERTIG) {
 				return knacker.gibBericht();
 			}

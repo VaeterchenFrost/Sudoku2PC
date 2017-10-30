@@ -66,8 +66,8 @@ class BildFeld {
 	static private Rectangle vergroessernProzent(Rectangle rechteck, int vergroesserungProzent) {
 		int vergroesserungX = Math.round((rechteck.width * vergroesserungProzent) / 100.0f);
 		int vergroesserungY = Math.round((rechteck.height * vergroesserungProzent) / 100.0f);
-		Rectangle r = new Rectangle(rechteck.x - vergroesserungX, rechteck.y - vergroesserungY, rechteck.width + 2
-				* vergroesserungX, rechteck.height + 2 * vergroesserungY);
+		Rectangle r = new Rectangle(rechteck.x - vergroesserungX, rechteck.y - vergroesserungY,
+				rechteck.width + 2 * vergroesserungX, rechteck.height + 2 * vergroesserungY);
 		return r;
 	}
 

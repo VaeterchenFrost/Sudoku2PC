@@ -180,8 +180,8 @@ public class MalerGeschenk extends MalerEinfach {
 	 * @param cAussenZahl
 	 * @param cFrei
 	 */
-	private void faerbeVorgabenBand(Graphics g, Rectangle r, FeldInfo feldInfo, Color cBandHintergrund,
-			Color cBandZahl, Color cAussenZahlHintergrund, Color cAussenZahl, Color cFrei) {
+	private void faerbeVorgabenBand(Graphics g, Rectangle r, FeldInfo feldInfo, Color cBandHintergrund, Color cBandZahl,
+			Color cAussenZahlHintergrund, Color cAussenZahl, Color cFrei) {
 
 		if (istVorgabenBand(feldInfo.gibFeldNummer())) {
 			FeldMaler.maleRechteck(g, r, cBandHintergrund);

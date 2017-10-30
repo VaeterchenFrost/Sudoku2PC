@@ -210,8 +210,8 @@ class BildFeldGruppe extends ArrayList<BildFeld> {
 		}
 
 		if (ZahlLeser.istSystemOut()) {
-			System.out.println(String.format("%s.setzeZahlen() in: ----------------------------------", getClass()
-					.getName()));
+			System.out.println(
+					String.format("%s.setzeZahlen() in: ----------------------------------", getClass().getName()));
 			for (int i = 0; i < this.size(); i++) {
 				BildFeld bildFeld = this.get(i);
 				Integer zahl = bildFeld.gibZahl();
@@ -235,8 +235,8 @@ class BildFeldGruppe extends ArrayList<BildFeld> {
 		}
 
 		if (ZahlLeser.istSystemOut()) {
-			System.out.println(String.format("%s.setzeZahl() in: ----------------------------------", getClass()
-					.getName()));
+			System.out.println(
+					String.format("%s.setzeZahl() in: ----------------------------------", getClass().getName()));
 			for (int i = 0; i < this.size(); i++) {
 				BildFeld bildFeld = this.get(i);
 				System.out.println(String.format("%s in %s", bildFeld.gibZahl(), bildFeld.gibFeldNummer()));

@@ -172,9 +172,8 @@ public class Protokoll_IO {
 		for (int iEintrag = 0; iEintrag < eintraege.size(); iEintrag++) {
 			ProtokollEintrag protokollEintrag = eintraege.get(iEintrag);
 
-			String sFeldNummer = String.format(" %s=%d %s=%d ", strIDZeile,
-					protokollEintrag.gibFeldNummer().gibZeile(), strIDSpalte, protokollEintrag.gibFeldNummer()
-							.gibSpalte());
+			String sFeldNummer = String.format(" %s=%d %s=%d ", strIDZeile, protokollEintrag.gibFeldNummer().gibZeile(),
+					strIDSpalte, protokollEintrag.gibFeldNummer().gibSpalte());
 			String sAlt = gibSpeicherText(protokollEintrag.eintragAlt, strIDAlt);
 			String sNeu = gibSpeicherText(protokollEintrag.eintragNeu, strIDNeu);
 			String zeile = String.format("%s %s=%d %s %s %s", strIDProtokoll + strIDEintrag, strIDIndex, iEintrag,

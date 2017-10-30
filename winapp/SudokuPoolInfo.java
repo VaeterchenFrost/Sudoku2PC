@@ -110,7 +110,8 @@ public class SudokuPoolInfo extends JTable {
 		return texte;
 	}
 
-	static private ArrayList<String[]> gibTexte(final EnumMap<Schwierigkeit, InfoTopf> poolInfo, boolean mitFuellstand) {
+	static private ArrayList<String[]> gibTexte(final EnumMap<Schwierigkeit, InfoTopf> poolInfo,
+			boolean mitFuellstand) {
 		ArrayList<String[]> texte = new ArrayList<>();
 
 		Set<Entry<Schwierigkeit, InfoTopf>> entrySet = poolInfo.entrySet();
@@ -251,19 +252,19 @@ public class SudokuPoolInfo extends JTable {
 		int i = 0;
 		texte[i++] = name;
 		texte[i++] = topfInfo.gibAnzahl() == 0 ? "" : gibSpaltenText(new Integer(topfInfo.gibAnzahl()).toString(), 3);
-		texte[i++] = topfInfo.gibAnzahlDoppel() == 0 ? "" : gibSpaltenText(
-				new Integer(topfInfo.gibAnzahlDoppel()).toString(), 3);
+		texte[i++] = topfInfo.gibAnzahlDoppel() == 0 ? ""
+				: gibSpaltenText(new Integer(topfInfo.gibAnzahlDoppel()).toString(), 3);
 		if (mitFuellstand) {
-			texte[i++] = topfInfo.gibFuellstand1() == 0 ? "" : gibSpaltenText(
-					new Integer(topfInfo.gibFuellstand1()).toString(), 2);
-			texte[i++] = topfInfo.gibFuellstand2() == 0 ? "" : gibSpaltenText(
-					new Integer(topfInfo.gibFuellstand2()).toString(), 2);
+			texte[i++] = topfInfo.gibFuellstand1() == 0 ? ""
+					: gibSpaltenText(new Integer(topfInfo.gibFuellstand1()).toString(), 2);
+			texte[i++] = topfInfo.gibFuellstand2() == 0 ? ""
+					: gibSpaltenText(new Integer(topfInfo.gibFuellstand2()).toString(), 2);
 		} else {
 			texte[i++] = "";
 			texte[i++] = "";
 		}
-		texte[i++] = topfInfo.gibGroesse() == 0 ? "" : gibSpaltenText(
-				new Long(Math.round(topfInfo.gibGroesse() / 1000.0)).toString(), 3);
+		texte[i++] = topfInfo.gibGroesse() == 0 ? ""
+				: gibSpaltenText(new Long(Math.round(topfInfo.gibGroesse() / 1000.0)).toString(), 3);
 		texte[i++] = topfInfo.gibLeichtestes() == null ? "" : gibSpaltenText(topfInfo.gibLeichtestes().toString(), 2);
 		texte[i++] = topfInfo.gibSchwerstes() == null ? "" : gibSpaltenText(topfInfo.gibSchwerstes().toString(), 3);
 		texte[i++] = gibDatumText(topfInfo.gibAeltestes());
@@ -299,8 +300,8 @@ public class SudokuPoolInfo extends JTable {
 		Rectangle maxRectangle = MaximaleFensterGroesse.gibMaxGroesse();
 		int dlgHeight = table.getRowCount() * table.getRowHeight() + 5 * buttonOK.getHeight();
 		Dimension dlgGroesse = new Dimension((maxRectangle.width * 4) / 5, dlgHeight);
-		dlg.setLocation(new Point((maxRectangle.width - dlgGroesse.width) / 2,
-				(maxRectangle.height - dlgGroesse.height)));
+		dlg.setLocation(
+				new Point((maxRectangle.width - dlgGroesse.width) / 2, (maxRectangle.height - dlgGroesse.height)));
 		dlg.setSize(dlgGroesse);
 
 		dlg.setVisible(true);

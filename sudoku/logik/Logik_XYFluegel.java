@@ -68,8 +68,8 @@ class Logik_XYFluegel implements Logik__Interface {
 					basisLinie.gibInText(false));
 			EinTipText t2a = new EinTipText(s2a, null);
 
-			String s2b = String
-					.format("Feld%s und Feld%s liegen %s.", verbindungsFeld, feld3, gruppe2.gibInText(false));
+			String s2b = String.format("Feld%s und Feld%s liegen %s.", verbindungsFeld, feld3,
+					gruppe2.gibInText(false));
 			EinTipText t2b = new EinTipText(s2b, null);
 
 			String s3 = String.format("Feld%s %s und %s verknüpft beide Gruppen.", verbindungsFeld,
@@ -394,8 +394,8 @@ class Logik_XYFluegel implements Logik__Interface {
 						if (!loeschFelder.isEmpty()) {
 							// Hurra: erfolgreiche Logik
 							TipInfoXYFluegel tipInfo = new TipInfoXYFluegel(basisLinie.gruppe, kasten1.kasten,
-									feld1.gibFeldNummer(), feld2.gibFeldNummer(), kasten2.kasten,
-									feld3.gibFeldNummer(), loeschZahl, loeschFelder);
+									feld1.gibFeldNummer(), feld2.gibFeldNummer(), kasten2.kasten, feld3.gibFeldNummer(),
+									loeschZahl, loeschFelder);
 							return tipInfo;
 						}
 					}
@@ -463,8 +463,8 @@ class Logik_XYFluegel implements Logik__Interface {
 								KastenIndex testFeldKastenIndex = Kasten.gibKastenIndex(testFeld.gibFeldNummer());
 								if (!arbeitsFeldKastenIndex.equals(testFeldKastenIndex)) {
 									// arbeitsFeld und TestFeld liegen in unterschiedlichen Kästen
-									ArrayList<Integer> fehlendeMoeglicheZahlen = gibFehlendeMoeglicheZahlen(
-											arbeitsFeld, testFeld);
+									ArrayList<Integer> fehlendeMoeglicheZahlen = gibFehlendeMoeglicheZahlen(arbeitsFeld,
+											testFeld);
 									if (fehlendeMoeglicheZahlen != null) {
 										// Arbeits- und Test-Feld besitzen zusammen genau 3 mögliche Zahlen.
 										TipInfoXYFluegel tipInfo = gibErgebnis(basisLinie, arbeitsFeld, testFeld,

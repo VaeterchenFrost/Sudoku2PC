@@ -34,8 +34,8 @@ public class BE_Logik {
 		String sLogikKurz = SudokuLogik.gibNameKurz(logik);
 		String sEintrag = eintrag == null ? "" : " Eintrag=" + eintrag;
 		String sLoeschZahlen = loeschZahlen == null ? "" : " Löschzahlen=" + loeschZahlen;
-		return "BE_Logik [" + sLogikKurz + " " + gruppenlaeufeListe.gibKurzText() + " " + sEintrag + " "
-				+ sLoeschZahlen + "]";
+		return "BE_Logik [" + sLogikKurz + " " + gruppenlaeufeListe.gibKurzText() + " " + sEintrag + " " + sLoeschZahlen
+				+ "]";
 	}
 
 }

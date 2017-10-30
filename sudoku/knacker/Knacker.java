@@ -214,8 +214,8 @@ public class Knacker {
 			FeldNummer feldNummer = sollEintrag.gibFeldNummer();
 			if (iPartner == 0) {
 				if (BerichtKnacker.istSystemOut()) {
-					System.out.println("   Knacke.setzePaarAlternativen(): " + sollEintrag.gibZahl() + " in "
-							+ feldNummer);
+					System.out.println(
+							"   Knacke.setzePaarAlternativen(): " + sollEintrag.gibZahl() + " in " + feldNummer);
 				}
 				sudoku.setzeEintrag(new FeldNummerMitZahl(feldNummer, sollEintrag.gibZahl()));
 			} else {
@@ -228,8 +228,8 @@ public class Knacker {
 		}
 	}
 
-	private Problem kontrolliereEintragVersuch(boolean hatZeit, ArrayList<KnackerPartner> partnerListe) throws Exc,
-			SudokuFertig {
+	private Problem kontrolliereEintragVersuch(boolean hatZeit, ArrayList<KnackerPartner> partnerListe)
+			throws Exc, SudokuFertig {
 
 		if (BerichtKnacker.istSystemOut()) {
 			System.out.println("Knacke.kontrolliereEintragVersuch(): " + partnerListe);
@@ -488,7 +488,8 @@ public class Knacker {
 					// }
 					// } // if VERSUCHINVERSUCH
 
-					if ((!wurdeEintragGesetzt) && (optionen.gibMaxErlaubteVersuchsEbene() == VersuchsEbenen.UNBEGRENZT)) {
+					if ((!wurdeEintragGesetzt)
+							&& (optionen.gibMaxErlaubteVersuchsEbene() == VersuchsEbenen.UNBEGRENZT)) {
 						// Varianz bemühen
 						boolean istFertig = Varianz.loese(sudoku, protokollMarkierer);
 						if (istFertig) {

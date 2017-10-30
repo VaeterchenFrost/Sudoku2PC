@@ -38,7 +38,8 @@ public class Gabe implements Comparable<Gabe> {
 	 * @param schwierigkeit
 	 * @param adressat
 	 */
-	public Gabe(InfoSudoku infoSudoku, Figur figur, SudokuSchwierigkeit schwierigkeit, String adressat, String dateiname) {
+	public Gabe(InfoSudoku infoSudoku, Figur figur, SudokuSchwierigkeit schwierigkeit, String adressat,
+			String dateiname) {
 		super();
 		this.infoSudoku = infoSudoku;
 		this.figur = figur;
@@ -125,8 +126,8 @@ public class Gabe implements Comparable<Gabe> {
 			}
 		}
 		// Wie schwer
-		cr = getCompareResult(schwierigkeit.gibKlareWieSchwer().ordinal(), other.schwierigkeit.gibKlareWieSchwer()
-				.ordinal());
+		cr = getCompareResult(schwierigkeit.gibKlareWieSchwer().ordinal(),
+				other.schwierigkeit.gibKlareWieSchwer().ordinal());
 		if (cr != 0) {
 			return cr;
 		}

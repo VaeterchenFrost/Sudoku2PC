@@ -374,8 +374,8 @@ public class DateiPool implements Pool0 {
 
 					dateiName = gibDateiNameAlternative(verzeichnisName, loesungsZeit);
 					if (dateiName == null) {
-						String bemerkung = String
-								.format("Dateien für die Lösungszeit %d existieren alle", loesungsZeit);
+						String bemerkung = String.format("Dateien für die Lösungszeit %d existieren alle",
+								loesungsZeit);
 						systemout(neuTyp, false, false, bemerkung);
 						return null;
 					}

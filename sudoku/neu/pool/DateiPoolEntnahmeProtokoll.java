@@ -73,8 +73,8 @@ public class DateiPoolEntnahmeProtokoll {
 		String wieSchwerName = Schwierigkeit.gibName(wieSchwer);
 		int zeitGerastert = AnalysatorKlare.gibAnzeigeZeit(loesungsZeit * 60, true);
 		String protokollZeitString = gibProtokollZeitString();
-		String zielDateiName = String
-				.format("%s%s %s %3d", pfadName, protokollZeitString, wieSchwerName, zeitGerastert);
+		String zielDateiName = String.format("%s%s %s %3d", pfadName, protokollZeitString, wieSchwerName,
+				zeitGerastert);
 		String zielDateiPfad = gibDateiNameFrei(zielDateiName, InfoSudoku.dateiErweiterung);
 		return zielDateiPfad;
 	}

@@ -142,7 +142,8 @@ class KriteriumFelder implements KriteriumBildInfo {
 				sErgebnisse += String.format(" %s=%1.1f=>%1.1f%%", feldErgebnis.feldNummer, feldErgebnis.ist,
 						feldErgebnis.erfuellungsGrad);
 			}
-			System.out.println(String.format("Erfüllt=%1.1f%%  %s: %s %s", durchschnitt, this.name, sErgebnisse, this));
+			System.out
+					.println(String.format("Erfüllt=%1.1f%%  %s: %s %s", durchschnitt, this.name, sErgebnisse, this));
 		}
 
 		return durchschnitt;
@@ -155,8 +156,7 @@ class KriteriumFelder implements KriteriumBildInfo {
 		// FeldNummer feldNummer = felder[i];
 		// sFelder += " " + feldNummer.toString();
 		// }
-		return "Kriterium [" + name + ":"
-				+ // sFelder +
+		return "Kriterium [" + name + ":" + // sFelder +
 				", 0Min=" + sollSchwarz.erfuellung0Min + ", soll=" + sollSchwarz.soll + ", 0Max="
 				+ sollSchwarz.erfuellung0Max + "]";
 	}

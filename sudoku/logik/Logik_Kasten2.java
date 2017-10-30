@@ -42,12 +42,14 @@ class Logik_Kasten2 extends LogikKastenN {
 
 	@Override
 	public String[] gibSituation() {
-		return new String[] { "Auf 2 gemeinsamen Linien (Spalte bzw. Zeile) sind in den 2 Nachbar-Kästen eine Zahl festgelegt." };
+		return new String[] {
+				"Auf 2 gemeinsamen Linien (Spalte bzw. Zeile) sind in den 2 Nachbar-Kästen eine Zahl festgelegt." };
 	}
 
 	@Override
 	public String[] gibErgebnis() {
-		return new String[] { "Im Kasten wird die Zahl auf diesen 2 Linien aus den möglichen dieser Felder gelöscht." };
+		return new String[] {
+				"Im Kasten wird die Zahl auf diesen 2 Linien aus den möglichen dieser Felder gelöscht." };
 	}
 
 	@Override
@@ -102,8 +104,8 @@ class Logik_Kasten2 extends LogikKastenN {
 					FeldNummerListe nachbar1UrsacheFelder = new FeldNummerListe(nachbar1Linien.get(iLinie));
 					nachbarUrsacheFelder.addAll(nachbar1UrsacheFelder);
 
-					KastenErgebnis ergebnis1 = new KastenErgebnis(istSpalte, basisZahl, new FeldNummerListe(
-							kannLoeschenIn), nachbarUrsacheFelder);
+					KastenErgebnis ergebnis1 = new KastenErgebnis(istSpalte, basisZahl,
+							new FeldNummerListe(kannLoeschenIn), nachbarUrsacheFelder);
 					ergebnisTemp.add(ergebnis1);
 				} // for (int iLinie
 

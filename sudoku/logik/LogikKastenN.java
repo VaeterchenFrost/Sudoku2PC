@@ -86,7 +86,8 @@ abstract class LogikKastenN implements Logik__Interface {
 		 * @param ergebnis
 		 * @param infoSudoku
 		 */
-		private TipInfoKasten(Logik_ID logik, FeldNummerListe mitSpieler, String textInGruppe, KastenErgebnis ergebnis) {
+		private TipInfoKasten(Logik_ID logik, FeldNummerListe mitSpieler, String textInGruppe,
+				KastenErgebnis ergebnis) {
 			super(logik, mitSpieler);
 			this.textInGruppe = textInGruppe;
 			this.ergebnis = ergebnis;
@@ -226,8 +227,8 @@ abstract class LogikKastenN implements Logik__Interface {
 		for (TipInfo tipInfo : ignorierTips) {
 			TipInfoKasten ignorierTip = (TipInfoKasten) tipInfo;
 			boolean gleicheMitspieler = ignorierTip.gibMitSpieler().istGleicherInhalt(tipInfoKasten.gibMitSpieler());
-			boolean gleicheLoeschZahlen = ignorierTip.gibLoeschZahlen().istGleicherInhalt(
-					tipInfoKasten.gibLoeschZahlen());
+			boolean gleicheLoeschZahlen = ignorierTip.gibLoeschZahlen()
+					.istGleicherInhalt(tipInfoKasten.gibLoeschZahlen());
 			if (gleicheMitspieler & gleicheLoeschZahlen) {
 				return true;
 			}
@@ -274,7 +275,8 @@ abstract class LogikKastenN implements Logik__Interface {
 					}
 
 					if (!ergebnisIgnorieren) {
-						LogikErgebnis logikErgebnis = new LogikErgebnis(gruppenLaeufeListe, null, loeschZahlen, tipInfo);
+						LogikErgebnis logikErgebnis = new LogikErgebnis(gruppenLaeufeListe, null, loeschZahlen,
+								tipInfo);
 						return logikErgebnis;
 					}
 				} // if (kastenErgebnis != null){

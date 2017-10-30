@@ -137,7 +137,8 @@ public class Schwierigkeiten implements LangerProzess {
 				Starter.execProgramUnterWindows(speicherDateiName);
 			} catch (Exception e) {
 				e.printStackTrace();
-				String msg = String.format("Die Datei %s konnte nicht ordungsgemäß erstellt werden", speicherDateiName);
+				String msg = String.format("Die Datei %s konnte nicht ordungsgemäß erstellt werden",
+						speicherDateiName);
 				JOptionPane.showMessageDialog(null, msg, "Schwierigkeiten-Erstellung", JOptionPane.ERROR_MESSAGE);
 			}
 		}

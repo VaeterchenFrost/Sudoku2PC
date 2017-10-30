@@ -406,9 +406,9 @@ abstract class LogikFeldPaareRing implements Logik__Interface {
 
 	@Override
 	public String[] gibWo() {
-		String s = String
-				.format("Auf %d parallelen Zeilen. (Alles gesagte gilt auch für %d parallele Spalten und Zeilen als Senkrechte.)",
-						anzahlRingFeldPaare, anzahlRingFeldPaare);
+		String s = String.format(
+				"Auf %d parallelen Zeilen. (Alles gesagte gilt auch für %d parallele Spalten und Zeilen als Senkrechte.)",
+				anzahlRingFeldPaare, anzahlRingFeldPaare);
 		return new String[] { s };
 	}
 
@@ -426,7 +426,8 @@ abstract class LogikFeldPaareRing implements Logik__Interface {
 
 	@Override
 	public String[] gibErgebnis() {
-		return new String[] { "Außer in den betrachteten Feldern kann die mögliche Zahl in den betreffenden Spalten gelöscht werden." };
+		return new String[] {
+				"Außer in den betrachteten Feldern kann die mögliche Zahl in den betreffenden Spalten gelöscht werden." };
 	}
 
 	private void systemOut(String s) {
@@ -459,9 +460,9 @@ abstract class LogikFeldPaareRing implements Logik__Interface {
 			if (zahlFeldPaare.size() >= anzahlRingFeldPaare) {
 
 				ArrayList<FeldPaar[]> moeglicheRinge = gibMoeglicheRinge(zahlFeldPaare, anzahlRingFeldPaare);
-				systemOut(String
-						.format("Für die Zahl %d: Notwendige Anzahl FeldPaare = %d. Anzahl FeldPaare = %d. Anzahl möglicher Ringe = %d",
-								zahl, anzahlRingFeldPaare, zahlFeldPaare.size(), moeglicheRinge.size()));
+				systemOut(String.format(
+						"Für die Zahl %d: Notwendige Anzahl FeldPaare = %d. Anzahl FeldPaare = %d. Anzahl möglicher Ringe = %d",
+						zahl, anzahlRingFeldPaare, zahlFeldPaare.size(), moeglicheRinge.size()));
 
 				for (FeldPaar[] moeglicherRing : moeglicheRinge) {
 					if (istRing(moeglicherRing)) {

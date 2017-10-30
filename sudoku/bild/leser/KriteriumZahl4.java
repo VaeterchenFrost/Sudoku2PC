@@ -11,8 +11,8 @@ class KriteriumZahl4 extends KriteriumZahl_BildInfo {
 		KriteriumBildInfo[] kriterien = { BasisKriterium.senkrechterStrichRechts14(),
 				BasisKriterium.waagerechterStrich4(), BasisKriterium.ausgangLinksOben14(),
 				BasisKriterium.ausgangLinksUnten4(),
-		// BasisKriterium.ausgangRechtsOben4(),
-		// BasisKriterium.ausgangRechtsUnten4()
+				// BasisKriterium.ausgangRechtsOben4(),
+				// BasisKriterium.ausgangRechtsUnten4()
 		};
 		return kriterien;
 	}

@@ -168,7 +168,8 @@ public class ToolBarLinks extends ToolBar0 implements EintragsModus {
 			// Knacke
 			{
 				JButton bKnacke = new ButtonSudoku("Knacke", sudoku);
-				bKnacke.setToolTipText("Es wird versucht, das Sudoku mit allen zur Verfügung stehenden Mitteln zu lösen");
+				bKnacke.setToolTipText(
+						"Es wird versucht, das Sudoku mit allen zur Verfügung stehenden Mitteln zu lösen");
 				bKnacke.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						sudoku.knacke();

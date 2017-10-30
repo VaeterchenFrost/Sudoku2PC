@@ -58,11 +58,11 @@ public class Loesungen {
 							basisIndex = new Integer(iBasis);
 							break;
 						}
-					}// for (int iBasis
+					} // for (int iBasis
 					if (basisIndex != null) {
 						break;
 					}
-				}// for (nStarts
+				} // for (nStarts
 
 				if (basisIndex == null) {
 					basisIndizees[iLoesung] = new Integer(0);

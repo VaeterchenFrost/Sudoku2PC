@@ -29,16 +29,16 @@ class Generator extends Generator1 {
 		Animator symmetrierer = new Animator_SpiegelnMittelPunkt();
 		if (istSystemOut()) {
 			String sSymmetrierer = symmetrierer == null ? "" : " mit " + symmetrierer.getClass().getSimpleName();
-			System.out.println(String.format("%s.gibNeuesSudoku() Start %s %s", Generator.class.getName(), neuTyp,
-					sSymmetrierer));
+			System.out.println(
+					String.format("%s.gibNeuesSudoku() Start %s %s", Generator.class.getName(), neuTyp, sSymmetrierer));
 		}
 
 		// Erstellung eines neuen Sudoku
 		Generator g = new Generator(neuTyp);
 		GeneratorErgebnis ergebnis = g.gibNeues(symmetrierer);
 		if (istSystemOut()) {
-			String sErgebnis = ergebnis.infoSudoku == null ? "null" : " Sudoku mit "
-					+ ergebnis.infoSudoku.gibAnzahlVorgaben() + " Vorgaben";
+			String sErgebnis = ergebnis.infoSudoku == null ? "null"
+					: " Sudoku mit " + ergebnis.infoSudoku.gibAnzahlVorgaben() + " Vorgaben";
 			System.out.println(String.format("%s.gibNeuesSudoku() Ergebnis=%s", Generator.class.getName(), sErgebnis));
 		}
 
@@ -311,8 +311,8 @@ class Generator extends Generator1 {
 						BerichtKnacker knackerBericht = leeren(tabu, symmetrierer);
 
 						// 3. Schwierigkeit dieses Sudoku ermitteln
-						SudokuSchwierigkeit wieSchwerIst = Analysator.gibSchwierigkeit(this.gibFeldmatrix()
-								.gibVorgaben(), knackerBericht);
+						SudokuSchwierigkeit wieSchwerIst = Analysator
+								.gibSchwierigkeit(this.gibFeldmatrix().gibVorgaben(), knackerBericht);
 						Schwierigkeit wieSchwerIstTyp = wieSchwerIst.gibKlareWieSchwer();
 
 						// MItschreiben (Speichern) erfolgreicher Logiken
@@ -359,8 +359,8 @@ class Generator extends Generator1 {
 			if (neuesSudoku == null) {
 				erfolg = new String("------------------- erfolglos");
 			}
-			System.out.println(String.format("%s.gibNeuesSudoku() %s: Ende %s", Generator.class.getName(), neuTyp,
-					erfolg));
+			System.out.println(
+					String.format("%s.gibNeuesSudoku() %s: Ende %s", Generator.class.getName(), neuTyp, erfolg));
 		}
 
 		GeneratorErgebnis ergebnis = new GeneratorErgebnis(neuesSudoku, typDesNeuenSudoku, loesungsZeit, laufNummer);

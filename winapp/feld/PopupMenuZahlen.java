@@ -29,7 +29,8 @@ public class PopupMenuZahlen extends JPopupMenu implements ActionListener // Erh
 	/**
 	 * Erstellt das PopupMenu: Entweder für Modus Eintrag oder Modus Vorgaben
 	 */
-	public static void erstellen(FeldAnzeige aFeld, EintragsModus aEintragsModus, Optionen optionen, Point componentPos) {
+	public static void erstellen(FeldAnzeige aFeld, EintragsModus aEintragsModus, Optionen optionen,
+			Point componentPos) {
 		popupMenu = new PopupMenuZahlen();
 		eintragsModus = aEintragsModus;
 		feld = aFeld;

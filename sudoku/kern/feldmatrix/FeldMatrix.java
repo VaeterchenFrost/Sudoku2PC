@@ -364,10 +364,10 @@ public class FeldMatrix {
 					Feld feld = ebenenFelder.get(iFeld);
 					String sFeld = String.format(" [%d%d]%d", feld.gibZeile(), feld.gibSpalte(), feld.gibEintrag());
 					sEbene += sFeld;
-				}// for( int zeile
+				} // for( int zeile
 
 				System.out.println(sEbene);
-			}// if (! ebenenFelder.isEmpty()
+			} // if (! ebenenFelder.isEmpty()
 		}
 	}
 

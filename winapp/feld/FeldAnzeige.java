@@ -369,8 +369,8 @@ public class FeldAnzeige extends JButton implements AnzeigeElement {
 			int rahmenBreite = hoehe / 20;
 			g.clipRect(rahmenBreite, rahmenBreite, this.getWidth() - 2 * rahmenBreite, hoehe - 2 * rahmenBreite);
 
-			rFeld = new Rectangle(rahmenBreite, rahmenBreite, this.getWidth() - 2 * rahmenBreite, hoehe - 2
-					* rahmenBreite);
+			rFeld = new Rectangle(rahmenBreite, rahmenBreite, this.getWidth() - 2 * rahmenBreite,
+					hoehe - 2 * rahmenBreite);
 		}
 
 		FeldInfo feldInfo = this.malZustand.gibFeldInfo();

@@ -90,7 +90,8 @@ public class EntnommeneDialog extends JDialog implements ActionListener, ItemLis
 	 * @param sudoku In den wird das benannte Sudoku geladen
 	 * @param eintragsModus Wird nach dem Laden eines Sudoku auf "Eintrag" gesetzt
 	 */
-	public EntnommeneDialog(JFrame frame, String applikationsTitel, SudokuBedienung sudoku, EintragsModus eintragsModus) {
+	public EntnommeneDialog(JFrame frame, String applikationsTitel, SudokuBedienung sudoku,
+			EintragsModus eintragsModus) {
 		super(frame, true);
 		this.frame = frame;
 		this.applikationsTitel = applikationsTitel;

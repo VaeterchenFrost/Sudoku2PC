@@ -22,8 +22,8 @@ public class ToolBarGruppeExtras {
 		protected SudokuBedienung sudoku;
 		protected StatusBar statusBar;
 
-		public ButtonExtra(String titel, String toolTip, JFrame frame, String applikationsTitel,
-				SudokuBedienung sudoku, StatusBar statusBar) {
+		public ButtonExtra(String titel, String toolTip, JFrame frame, String applikationsTitel, SudokuBedienung sudoku,
+				StatusBar statusBar) {
 			super(titel);
 			this.setToolTipText(toolTip);
 			this.frame = frame;

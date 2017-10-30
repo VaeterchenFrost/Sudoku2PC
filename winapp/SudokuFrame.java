@@ -24,25 +24,25 @@ import winapp.toolbar.ToolBarGruppeSudoku;
 import winapp.toolbar.ToolBarLinks;
 import winapp.toolbar.ToolBarRechts;
 
-//TODO Sudoku speichert auch die "Einträge"
+//TODO Sudoku speichert auch die "EintrÃ¤ge"
 // Das geht, indem das Protokoll mit gespeichert und geladen wird.
 // und sollte nur stattfinden bei Speichern bzw. Laden per Toolbar-Button.
 
 //TODO Sudoku ablesen von irgendeinem Bild (Internet-Browser)
-/** Lösungshinweise:
+/** LÃ¶sungshinweise:
  * - Basiert auf Tesseract OCR engine. http://www.newocr.com
  * - http://www.free-ocr.com/
  * - http://www.sciweavers.org/free-online-ocr
  * - https://www.ocrgeek.com/
  * - http://www.online-code.net/ocr.html
  * - Microsoft Office Document Imaging 12.0 Type Library. 
- * 		Das kann man sich free saugen und stellt eine OCR-Klasse dar. Der Klasse übergibt man einfach einen FileName und gut is ;)
+ * 		Das kann man sich free saugen und stellt eine OCR-Klasse dar. Der Klasse Ã¼bergibt man einfach einen FileName und gut is ;)
  * - C++Code: http://www.planet-source-code.com/vb/scripts/ShowCode.asp?txtCodeId=5604&lngWId=3
  */
 
 // TODO Mac-Installer: http://mac.softpedia.com/get/Utilities/Jar-Installer.shtml
 
-// TODO Suchstrings für die Ablage im *.jar-File als Ressource:
+// TODO Suchstrings fÃ¼r die Ablage im *.jar-File als Ressource:
 // InputStream in = ResLoader.class.getResourceAsStream("img/meinBild.png");
 // URL url = ResLoader.class.getResource("img/meinBild.png");
 // Die Datei Configuration.properties liegt wie die Klasse ConfigTool im Package config
@@ -55,10 +55,10 @@ import winapp.toolbar.ToolBarRechts;
 //
 
 // TODO Mehrfach-Sudoku
-// - Menü + Toolbar weg zur Seite:
+// - MenÃ¼ + Toolbar weg zur Seite:
 // . Tollbar links: oben Eingabemodus + Klare + Knacken, Mitte Sudoku, unten Optionen
 // - Wird das beste sein: Swing ersetzen durch awt
-// - Alle FeldAnzeigen legen sich drunter ein Panel gleicher Größe, denn
+// - Alle FeldAnzeigen legen sich drunter ein Panel gleicher GrÃ¶ÃŸe, denn
 // - FeldAnzeigen als Klasse extended Panel
 // - Anzeige Spalte/Zeile mit Label
 
@@ -78,7 +78,7 @@ public class SudokuFrame extends JFrame {
 	}
 
 	/**
-	 * @return Die Breite und Höhe des Bereiches um die Sudokuanzeige (FeldAnzeigen)
+	 * @return Die Breite und HÃ¶he des Bereiches um die Sudokuanzeige (FeldAnzeigen)
 	 */
 	public static Dimension gibSudokuRahmen() {
 		int breiteToolBarL = toolBarLinks.getWidth();
@@ -112,7 +112,7 @@ public class SudokuFrame extends JFrame {
 		super();
 		mainFrame = this;
 		this.setTitle(titel);
-		// Anwendung schließen bei Haupt-Fenster-Schließen läuft nicht automatisch!
+		// Anwendung schlieÃŸen bei Haupt-Fenster-SchlieÃŸen lÃ¤uft nicht automatisch!
 		this.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
@@ -131,18 +131,18 @@ public class SudokuFrame extends JFrame {
 		SudokuFrame.toolBarLinks.erschaffeGruppeAnzeige(optionen, sudoku, feldAnzeigen);
 		SudokuFrame.toolBarLinks.erschaffeGruppeExtras(this, titel, sudoku, statusBar, toolBarRechts);
 
-		// Eigene Minimal-Größe setzen (auf Quadrat für das Ermitteln der nichtNutzbareHoehe!)
+		// Eigene Minimal-GrÃ¶ÃŸe setzen (auf Quadrat fÃ¼r das Ermitteln der nichtNutzbareHoehe!)
 		int minGroesse = 300;
 		this.setMinimumSize(new Dimension(minGroesse, minGroesse));
-		// Die Components.. erhalten ihre reale Größe
+		// Die Components.. erhalten ihre reale GrÃ¶ÃŸe
 		pack();
 
 		SudokuFrame.toolBarLinks.aufpeppen();
 		SudokuFrame.toolBarRechts.aufpeppen();
-		// Die ToolBars erhalten ihre neue reale Größe
+		// Die ToolBars erhalten ihre neue reale GrÃ¶ÃŸe
 		pack();
 
-		// Eigene Größe setzen
+		// Eigene GrÃ¶ÃŸe setzen
 		Groesse.setzeMaximalGroesse();
 
 		// Und jetzt einmal Veranlassen, dass sudoku alle Anzeigeelemente anspricht
@@ -179,9 +179,9 @@ public class SudokuFrame extends JFrame {
 		// Das Bild wird, weil es Bestandteil der Projekt-Quellen ist, als Ressource erfolgreich bereitgestellt
 		// und als Ikon der laufenden Anwendung dargestellt.
 
-		// Allerdings bietet die Applikation nichts als Icon an für die Konfiguration des Symbols für eine Verknüpfung.
-		// Dazu müsste laut Hinweisen das Bild z.B. mit IvanView im richtigen Format gespeichert werden.
-		// Nämlich im Format eines Symbols und mit der Dateierweiterung .ico.
+		// Allerdings bietet die Applikation nichts als Icon an fÃ¼r die Konfiguration des Symbols fÃ¼r eine VerknÃ¼pfung.
+		// Dazu mÃ¼sste laut Hinweisen das Bild z.B. mit IvanView im richtigen Format gespeichert werden.
+		// NÃ¤mlich im Format eines Symbols und mit der Dateierweiterung .ico.
 
 		return list;
 	}

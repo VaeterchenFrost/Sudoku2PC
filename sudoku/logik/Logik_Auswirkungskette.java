@@ -193,7 +193,7 @@ class Logik_Auswirkungskette implements Logik__Interface {
 					for (FeldNummer zielFeldNummer : zielFeldNummern) {
 						ZahlenListe kette = new ZahlenListe(vorhandeneKette);
 						FeldNummerMitZahl testZiel = new FeldNummerMitZahl(zielFeldNummer, wegZahl);
-						// systemOut(String.format("   Idee für TestZiel %s", testZiel));
+						// systemOut(String.format(" Idee für TestZiel %s", testZiel));
 						if (kette.contains(testZiel)) {
 							if (istSystemOut) {
 								systemOut(String.format("%sTestZiel %s ist schon Ketten-Mitglied",

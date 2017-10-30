@@ -58,8 +58,8 @@ public class GeschenkeDruck {
 		String wieSchwerName = Schwierigkeit.gibName(gabe.gibWieSchwer());
 		int zeit = gabe.gibZeit();
 		String adressat = gabe.gibAdressat();
-		String[] gruesse = { "XXX", "ich wünsche dir ein ", "herzerwärmendes", "wunderschönes Fest", "und viel Spaß",
-				"beim Sudokuen!" };
+		String[] gruesse = { "XXX", "ich wünsche dir ein ", "herzerwärmendes", "wunderschönes Fest",
+				"und viel Spaß", "beim Sudokuen!" };
 		String gruss = gruesse[gabeIndex];
 		if (gruss == "XXX") {
 			gruss = adressat + ",";

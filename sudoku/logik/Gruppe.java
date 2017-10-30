@@ -33,7 +33,8 @@ public class Gruppe extends FeldListe {
 		spalteMax++;
 		spalteMax *= 3;
 
-		return ((feldNummer.zeile >= zeileMin) && (feldNummer.spalte >= spalteMin) && (feldNummer.zeile <= zeileMax) && (feldNummer.spalte <= spalteMax));
+		return ((feldNummer.zeile >= zeileMin) && (feldNummer.spalte >= spalteMin) && (feldNummer.zeile <= zeileMax)
+				&& (feldNummer.spalte <= spalteMax));
 	}
 
 	/**
@@ -55,8 +56,8 @@ public class Gruppe extends FeldListe {
 			mitglied = (istKastenFeld(basisFeldNummer, feldNummer));
 			break;
 		case MIX:
-			mitglied = ((basisFeldNummer.zeile == feldNummer.zeile) || (basisFeldNummer.spalte == feldNummer.spalte) || istKastenFeld(
-					basisFeldNummer, feldNummer));
+			mitglied = ((basisFeldNummer.zeile == feldNummer.zeile) || (basisFeldNummer.spalte == feldNummer.spalte)
+					|| istKastenFeld(basisFeldNummer, feldNummer));
 			break;
 		}
 		return mitglied;

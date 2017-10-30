@@ -64,8 +64,8 @@ class ZMist_Logik_KastenLinie implements Logik__Interface {
 				texte.add(tipText1);
 			}
 			{
-				String s1 = String
-						.format("Deshalb wird die Zahl %d in den anderen Feldern des Kastens gelöscht.", zahl);
+				String s1 = String.format("Deshalb wird die Zahl %d in den anderen Feldern des Kastens gelöscht.",
+						zahl);
 				EinTipText tipText1 = new EinTipText(s1, null);
 				texte.add(tipText1);
 			}
@@ -132,17 +132,20 @@ class ZMist_Logik_KastenLinie implements Logik__Interface {
 
 	@Override
 	public String[] gibSituationAbstrakt() {
-		return new String[] { "1 Zahl ist in einer Zeile bzw. Spalte nur auf Feldern innerhald eines Kastens möglich." };
+		return new String[] {
+				"1 Zahl ist in einer Zeile bzw. Spalte nur auf Feldern innerhald eines Kastens möglich." };
 	}
 
 	@Override
 	public String[] gibSituation() {
-		return new String[] { "1 Zahl ist in einer Zeile bzw. Spalte nur auf Feldern innerhald eines Kastens möglich." };
+		return new String[] {
+				"1 Zahl ist in einer Zeile bzw. Spalte nur auf Feldern innerhald eines Kastens möglich." };
 	}
 
 	@Override
 	public String[] gibErgebnis() {
-		return new String[] { "Diese 1 Zahl ist innerhalb des Kastens nirgendwoanders möglich. Auf den anderen Feldern wird die Zahl also gelöscht." };
+		return new String[] {
+				"Diese 1 Zahl ist innerhalb des Kastens nirgendwoanders möglich. Auf den anderen Feldern wird die Zahl also gelöscht." };
 	}
 
 	@Override
@@ -207,7 +210,8 @@ class ZMist_Logik_KastenLinie implements Logik__Interface {
 							if (anzahlMoeglicherFelderDerLinienZahl < felderDerMoeglichenZahlImKasten.size()) {
 								// Es gibt zu löschende Zahlen im Kasten
 								FeldNummerListe loeschFeldNummern = new FeldNummerListe();
-								for (int iFeldImKasten = 0; iFeldImKasten < felderDerMoeglichenZahlImKasten.size(); iFeldImKasten++) {
+								for (int iFeldImKasten = 0; iFeldImKasten < felderDerMoeglichenZahlImKasten
+										.size(); iFeldImKasten++) {
 									Feld feld = felderDerMoeglichenZahlImKasten.get(iFeldImKasten);
 									if (!felderDerMoeglichenLinienZahl.contains(feld)) {
 										loeschFeldNummern.add(feld.gibFeldNummer());

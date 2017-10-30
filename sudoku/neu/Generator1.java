@@ -214,8 +214,8 @@ class Generator1 extends Analysator {
 		int nZahl = 0;
 		int nLauf = 0;
 		if (istSystemOut() && istSystemOutAlles()) {
-			System.out.println(String.format("schaffeBestimmtheit(): nFreie=%d nZahlen=%d", probierFelder.size(),
-					nZahlen));
+			System.out.println(
+					String.format("schaffeBestimmtheit(): nFreie=%d nZahlen=%d", probierFelder.size(), nZahlen));
 		}
 		while (true) {
 			nLauf++;

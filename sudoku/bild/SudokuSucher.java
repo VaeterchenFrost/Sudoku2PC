@@ -266,8 +266,10 @@ public class SudokuSucher { // implements LangerProzess{
 		if (spaltenErstellen) {
 			systemOut(String.format("%s Spalten-Strich-Erstellung mit Min-Strich-Länge=%d Pixel", titel,
 					minStrichLaengeSenkrecht));
-			systemOut(" ------------------------------------------------------------------------------------------------------");
-			spaltenSudokuStriche = gibSudokuStriche(linienWeiss.spaltenWeiss, minStrichLaengeSenkrecht, titel, "Spalte");
+			systemOut(
+					" ------------------------------------------------------------------------------------------------------");
+			spaltenSudokuStriche = gibSudokuStriche(linienWeiss.spaltenWeiss, minStrichLaengeSenkrecht, titel,
+					"Spalte");
 		} else {
 			spaltenSudokuStriche = stricheKreuz.spaltenStriche;
 		}
@@ -277,7 +279,8 @@ public class SudokuSucher { // implements LangerProzess{
 		if (zeilenErstellen) {
 			systemOut(String.format("%s Zeilen-Strich-Erstellung mit Min-Strich-Länge=%d Pixel", titel,
 					minStrichLaengeWaagerecht));
-			systemOut(" ------------------------------------------------------------------------------------------------------");
+			systemOut(
+					" ------------------------------------------------------------------------------------------------------");
 			zeilenSudokuStriche = gibSudokuStriche(linienWeiss.zeilenWeiss, minStrichLaengeWaagerecht, titel, "Zeile");
 		} else {
 			zeilenSudokuStriche = stricheKreuz.zeilenStriche;

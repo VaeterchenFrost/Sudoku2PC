@@ -32,8 +32,8 @@ class KriteriumOder implements KriteriumBildInfo {
 		}
 
 		if (istHierSystemOut) {
-			System.out.println(String.format("%s Erfüllt=%1.1f%% %s Kriterium1=%1.1f%% Kriterium2=%1.1f%%", getClass()
-					.getSimpleName(), grad, this.name, grad1, grad2));
+			System.out.println(String.format("%s Erfüllt=%1.1f%% %s Kriterium1=%1.1f%% Kriterium2=%1.1f%%",
+					getClass().getSimpleName(), grad, this.name, grad1, grad2));
 		}
 
 		return grad;
@@ -41,8 +41,8 @@ class KriteriumOder implements KriteriumBildInfo {
 
 	@Override
 	public String toString() {
-		return "KriteriumOder [" + name + ": Kriterium1=" + kriterium1.gibName() + " Kriterium2="
-				+ kriterium2.gibName() + "]";
+		return "KriteriumOder [" + name + ": Kriterium1=" + kriterium1.gibName() + " Kriterium2=" + kriterium2.gibName()
+				+ "]";
 	}
 
 	public String gibName() {

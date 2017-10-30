@@ -17,5 +17,6 @@ public interface GeneratorStatistik {
 	 * @param topfName Im Falle des Dateipools ist dies die vollständige Pfadangabe zum Topf des neuTyps
 	 */
 	public void neuesSudoku(final NeuTyp forderung, final InfoSudoku infoSudoku, final NeuTyp neuTyp,
-			final int laufNummer, final Boolean istErstesDerLoesungsZeit, final int loesungsZeit, final String topfName);
+			final int laufNummer, final Boolean istErstesDerLoesungsZeit, final int loesungsZeit,
+			final String topfName);
 }

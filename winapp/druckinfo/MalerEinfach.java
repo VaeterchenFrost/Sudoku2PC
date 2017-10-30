@@ -89,7 +89,8 @@ public class MalerEinfach implements InfoSudokuMaler {
 	 * @param sudokuVertikal
 	 * @return Das Rechteck des Feldes im Sudoku-Rechteck
 	 */
-	private Rectangle gibFeldRechteck(FeldNummer feldNummer, PosUndLaenge sudokuHorizontal, PosUndLaenge sudokuVertikal) {
+	private Rectangle gibFeldRechteck(FeldNummer feldNummer, PosUndLaenge sudokuHorizontal,
+			PosUndLaenge sudokuVertikal) {
 		PosUndLaenge horizontalFeld = FeldPosition.gibPosUndLaenge(sudokuHorizontal, feldNummer.spalte);
 		PosUndLaenge vertikalFeld = FeldPosition.gibPosUndLaenge(sudokuVertikal, feldNummer.zeile);
 		Rectangle rFeld = new Rectangle(horizontalFeld.pos, vertikalFeld.pos, horizontalFeld.laenge,

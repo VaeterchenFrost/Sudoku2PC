@@ -71,8 +71,8 @@ class LinienWeiss {
 	}
 
 	public void systemOut() {
-		System.out.println(String.format("LinienWeiss mit %d Spalten und %d Zeilen", spaltenWeiss.length,
-				zeilenWeiss.length));
+		System.out.println(
+				String.format("LinienWeiss mit %d Spalten und %d Zeilen", spaltenWeiss.length, zeilenWeiss.length));
 
 		int maxIndex = Math.max(spaltenWeiss.length, zeilenWeiss.length) - 1;
 		System.out.print("Indexe: ");

@@ -123,12 +123,14 @@ class Logik_Feld implements Logik__Interface {
 
 	@Override
 	public String[] gibSituationAbstrakt() {
-		return new String[] { "In 1 Feld ist 1 Zahl festgelegt aufgrund der Belegung seiner Gruppen (Zeile, Spalte und Kasten)." };
+		return new String[] {
+				"In 1 Feld ist 1 Zahl festgelegt aufgrund der Belegung seiner Gruppen (Zeile, Spalte und Kasten)." };
 	}
 
 	@Override
 	public String[] gibSituation() {
-		return new String[] { "In 1 Feld ist nur 1 Zahl möglich aufgrund der Belegung seiner Gruppen (Zeile, Spalte und Kasten)." };
+		return new String[] {
+				"In 1 Feld ist nur 1 Zahl möglich aufgrund der Belegung seiner Gruppen (Zeile, Spalte und Kasten)." };
 	}
 
 	@Override

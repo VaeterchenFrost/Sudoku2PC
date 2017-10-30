@@ -193,7 +193,8 @@ class Logik_XYZFluegel implements Logik__Interface {
 
 	@Override
 	public String[] gibSituation() {
-		return new String[] { "Das Feld mit den 3 möglichen Zahlen verknüpft die Linie mit dem Kasten (Verbindungsfeld)." };
+		return new String[] {
+				"Das Feld mit den 3 möglichen Zahlen verknüpft die Linie mit dem Kasten (Verbindungsfeld)." };
 	}
 
 	@Override
@@ -340,11 +341,12 @@ class Logik_XYZFluegel implements Logik__Interface {
 								if (arbeitsKasten.arbeitsFelder != null) {
 									if (!arbeitsKasten.arbeitsFelder.isEmpty()) {
 										// Im Kasten gibt es Felder mit 2 möglichen Zahlen
-										for (int iTestFeld = 0; iTestFeld < basisLinie.arbeitsFelder.size(); iTestFeld++) {
+										for (int iTestFeld = 0; iTestFeld < basisLinie.arbeitsFelder
+												.size(); iTestFeld++) {
 											Feld testFeld = basisLinie.arbeitsFelder.get(iTestFeld);
 											// Liegt das TestFeld in einem anderen Kasten?
-											KastenIndex testFeldKastenIndex = Kasten.gibKastenIndex(testFeld
-													.gibFeldNummer());
+											KastenIndex testFeldKastenIndex = Kasten
+													.gibKastenIndex(testFeld.gibFeldNummer());
 											if (!kastenIndex.equals(testFeldKastenIndex)) {
 												// arbeitsFeld und TestFeld liegen in unterschiedlichen Kästen
 												ArrayList<Integer> moegliche2 = testFeld.gibMoegliche();
@@ -353,8 +355,8 @@ class Logik_XYZFluegel implements Logik__Interface {
 													Paar<ArrayList<Integer>, ArrayList<Integer>> fehlendeMoeglicheZahlen = gibFehlendeMoeglicheZahlen(
 															moegliche1, moegliche2);
 
-													TipInfoXYZFluegel tipInfo = gibErgebnis(basisLinie, feld1,
-															testFeld, fehlendeMoeglicheZahlen, arbeitsKasten);
+													TipInfoXYZFluegel tipInfo = gibErgebnis(basisLinie, feld1, testFeld,
+															fehlendeMoeglicheZahlen, arbeitsKasten);
 													if (tipInfo != null) {
 														if (!tipInfo.ignorieren(ignorierTips)) {
 															return tipInfo;

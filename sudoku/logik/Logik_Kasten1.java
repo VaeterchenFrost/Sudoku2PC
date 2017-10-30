@@ -47,7 +47,8 @@ class Logik_Kasten1 extends LogikKastenN {
 
 	@Override
 	public String[] gibErgebnis() {
-		return new String[] { "Im Kasten wird die Zahl auf dieser 1 Linie aus den möglichen dieser Felder gelöscht." };
+		return new String[] {
+				"Im Kasten wird die Zahl auf dieser 1 Linie aus den möglichen dieser Felder gelöscht." };
 	}
 
 	@Override
@@ -90,8 +91,8 @@ class Logik_Kasten1 extends LogikKastenN {
 						// Es gibt LöschZahlen: Diese Logik war aktiv
 						FeldNummerListe nachbarUrsacheFelder = new FeldNummerListe(nachbarLinien.get(iLinieVerboten));
 
-						KastenErgebnis ergebnis1 = new KastenErgebnis(istSpalte, zahl, new FeldNummerListe(
-								kannLoeschenIn), nachbarUrsacheFelder);
+						KastenErgebnis ergebnis1 = new KastenErgebnis(istSpalte, zahl,
+								new FeldNummerListe(kannLoeschenIn), nachbarUrsacheFelder);
 						return ergebnis1;
 					}
 				}
